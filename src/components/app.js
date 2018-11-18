@@ -1,9 +1,6 @@
 // Imports the `React` module and the `Component` class from that module.
 import React, { Component } from 'react';
 
-// Imports the Header component from our header.js file. The ./ moves up one directory, in this case, out of this file.
-import Header from './header';
-
 // Creates an `App` class that is a child of the `Component` class.
 class App extends Component {
 
@@ -29,9 +26,7 @@ class App extends Component {
         These parameters are accessed by the component as `props`.
         We can also have multiple of the same component type- each different from each other in the rendering process.
         */ }
-        <Header author='TechenPro'/>
-        <Header author='Chillin McGee'/>
-        <Header author='Doctor Faust'/>
+        WORKING!
 
       </div>
 
