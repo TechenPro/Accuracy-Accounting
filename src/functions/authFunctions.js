@@ -2,7 +2,7 @@
 import React from 'react';
 import { Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 
-export function RequireAuth({ component: Component, authenticated: Auth}, ...rest ) {
+export function RequireAuth({ component: Component, authenticated: Auth, ...rest }) {
   return(
 
     <Route

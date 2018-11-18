@@ -1,7 +1,3 @@
-// This imports another scss file to bring all of that file's styles into this one.
-// Any variables, mixins, or keyframes in the imported files are brought along as well.
-@import 'header';
-
 // Styling is done with the same syntax as vanilla CSS3.
 html {
     font-size: 62.5%; // 1rem is 10px
