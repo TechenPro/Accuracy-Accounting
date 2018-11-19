@@ -12,7 +12,8 @@ https://www.example.com
 
 #### To View Website:
 * Open terminal in repo and run the command:
-  * `npm start`
+  * For Just the Frontend: `npm run client`
+  * For the Full Stack Application: `npm run dev`
 
 Webpack is configured to reload site as changes are made to the project files.
 
