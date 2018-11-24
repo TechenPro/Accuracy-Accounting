@@ -22,6 +22,7 @@ import {RequireAuth} from './functions/authFunctions';
 import Layout from './components/layout';
 import App from './components/app';
 import Page404 from './components/404';
+import Login from './components/auth/login';
 
 
 function main() {
@@ -34,7 +35,7 @@ function main() {
           { /* Only allows one path to be rendered at any time */ }
           <Switch>
 
-            <Route path='/' exact component={Page404}/>
+            <Route path='/' exact component={Login}/>
             <RequireAuth path='/protected' component={App} authenticated={true}/>
             {/* Catches All Invalid Links */}
             <Route component={Page404}/>

@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default class Login extends Component {
+import * as actions from '../../actions';
+
+import LoginForm from './loginForm';
+
+class Login extends Component {
+
+    onSubmit = (fields) => {
+        this.props.signIn(fields, () => {
+            console.log("Login Successful");
+        })
+    }
+
     render() {
         return(
-            <div classname='login'>
-                
+            <div className='login'>
+                <LoginForm handleSubmit={(event) => this.onSubmit(event)}/>
             </div>
         )
     }
 }
+
+export default connect(null, actions)(Login);
