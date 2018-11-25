@@ -23,6 +23,7 @@ import Layout from './components/layout';
 import App from './components/app';
 import Page404 from './components/404';
 import Login from './components/auth/login';
+import homePage from './components/homePage/homePage';
 
 
 function main() {
@@ -37,6 +38,7 @@ function main() {
 
             <Route path='/' exact component={Login}/>
             <RequireAuth path='/protected' component={App} authenticated={true}/>
+            <Route path='/homePage' component={homePage}/>
             {/* Catches All Invalid Links */}
             <Route component={Page404}/>
 

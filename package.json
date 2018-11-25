@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A website project for the 2018 FBLA Web Development competition",
   "scripts": {
-    "postinstall": "cp env.example.js env.js",
+    "postinstall": "copy env.example.js env.js",
     "start": "npm run build && node src/server/index.js",
     "client": "webpack-dev-server --config webpack/dev.config.js --watch",
     "server": "nodemon src/server/index.js",
