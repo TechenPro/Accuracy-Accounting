@@ -1,0 +1,78 @@
+// .container {
+//   position: relative;
+//   width: 50%;
+//   left: 300px;
+// }
+
+// .image {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
+
+
+
+// .container:hover .overlay {
+//   opacity: .90;
+// }
+
+// .text {
+//   color: white;
+//   font-size: 20px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   -webkit-transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%);
+//   text-align: center;
+// }
+
+
+@keyframes example {
+   0%   {
+   }
+   100% {
+
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+   }
+   
+}
+
+
+.animation2 {
+  height: 200px;
+  width: 200px;
+  left: 300px;
+  transform: translate(300px,300px);
+  &:hover {
+    background-image: url('http://www.globalblue.com/tax-free-shopping/belgium/article641237.ece/alternates/LANDSCAPE2_970/Grand-Place-with-colorful-lighting-at-Dusk-in-Brussels-belgium.jpg');
+    background-size: cover;
+    background-repeat: none;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+}
+
+.animation2 img {
+  height: 100%;
+  width: auto;
+}
+
+// .overlay {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   height: 100%;
+//   width: 100%;
+//   opacity: 0;
+//   transition: .5s ease;
+//   background-color: #008CBA;
+// }

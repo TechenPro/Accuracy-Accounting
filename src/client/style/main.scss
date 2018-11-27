@@ -1,5 +1,6 @@
 @import 'animation';
 @import 'imageSize';
+@import 'industryCard';
 // Styling is done with the same syntax as vanilla CSS3.
 html {
     font-size: 62.5%; // 1rem is 10px
@@ -26,8 +27,7 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
+.layout-grid {
+    width: 100vw;
+
 }

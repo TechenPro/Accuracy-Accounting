@@ -9,8 +9,8 @@ export default class homePage extends Component {
             <div className='crossHair'>
                 <ImageLink
                     imageurl='https://www.wpclipart.com/signs_symbol/targets/crosshair/crosshair_1_large.png'
-                    text='crosshair'
-                    linkUrl="/homePage"
+                    
+                    linkUrl="/industryCard"
                 />
             </div>,
 
