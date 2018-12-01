@@ -1,78 +1,57 @@
-// .container {
-//   position: relative;
-//   width: 50%;
-//   left: 300px;
-// }
-
-// .image {
-//   display: block;
-//   width: 100%;
-//   height: auto;
-// }
-
-
-
-// .container:hover .overlay {
-//   opacity: .90;
-// }
-
-// .text {
-//   color: white;
-//   font-size: 20px;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   -webkit-transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-//   transform: translate(-50%, -50%);
-//   text-align: center;
-// }
-
-
-@keyframes example {
+@keyframes hoverOn {
    0%   {
    }
    100% {
 
-    opacity: 0;
+    opacity: .15;
     transition: .5s ease;
-    background-color: #008CBA;
    }
    
 }
 
+@keyframes hoverOff {
+  0% {
+    opacity: .15;
+  }
+  100% {
+    opacity: 1;
+  }
+  }
 
-.animation2 {
+.industryCard {
   height: 200px;
   width: 200px;
   left: 300px;
-  transform: translate(300px,300px);
-  &:hover {
-    background-image: url('http://www.globalblue.com/tax-free-shopping/belgium/article641237.ece/alternates/LANDSCAPE2_970/Grand-Place-with-colorful-lighting-at-Dusk-in-Brussels-belgium.jpg');
-    background-size: cover;
-    background-repeat: none;
-    animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-
+  transform: translate(0px,200px);
+  text-align: center;
 }
 
-.animation2 img {
+.card img:hover {
+  animation-name: hoverOn;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.card-txt {
+    position: absolute;
+    top: 5%;
+    left: 100%;
+}
+
+.card img{
+  position: absolute;
   height: 100%;
   width: auto;
+  animation-name: hoverOff;
+  animation-duration: .5s;
+  border: 1px solid rgb(0, 0, 0);
 }
 
-// .overlay {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   height: 100%;
-//   width: 100%;
-//   opacity: 0;
-//   transition: .5s ease;
-//   background-color: #008CBA;
-// }
+.card-description {
+  position: absolute;
+  height: 100%;
+  width: 135%;
+  top: 25%;
+  left: 60%;
+}

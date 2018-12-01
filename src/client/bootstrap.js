@@ -25,6 +25,7 @@ import Page404 from './components/404';
 import Login from './components/auth/login';
 import homePage from './components/homePage/homePage';
 import industryCard from './components/homePage/industryCard';
+import header from './components/homePage/header'
 
 
 function main() {
@@ -41,6 +42,7 @@ function main() {
             <RequireAuth path='/protected' component={App} authenticated={true}/>
             <Route path='/homePage' component={homePage}/>
             <Route path='/industryCard' component={industryCard} />
+            <Route path='/header' component={header} />
             {/* Catches All Invalid Links */}
             <Route component={Page404}/>
 
