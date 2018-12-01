@@ -105,9 +105,3 @@ export default class homePage extends Component {
         ]
     }
 }
-
-
-
-
-// crosshair img:    https://www.wpclipart.com/signs_symbol/targets/crosshair/crosshair_1_large.png
-// city img:         https://www.thetimes.co.uk/travel/s3/growthtravel-prod/uploads/2017/11/Hong_Kong_Cedric009-1500x792.jpg
