@@ -19,39 +19,41 @@
   }
 
 .industryCard {
-  height: 200px;
-  width: 200px;
-  left: 300px;
-  transform: translate(0px,200px);
   text-align: center;
-}
-
-.card img:hover {
-  animation-name: hoverOn;
-  animation-duration: .5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  word-wrap: break-word;
+  position: relative;
 }
 
 .card-txt {
     position: absolute;
-    top: 5%;
-    left: 100%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
 }
 
-.card img{
-  position: absolute;
-  height: 100%;
-  width: auto;
-  animation-name: hoverOff;
-  animation-duration: .5s;
-  border: 1px solid rgb(0, 55, 107);
+.card-img{
+  img
+  {
+    max-height: 250px;
+    max-width: 250px;
+    height: 100%;
+    width: 100%;
+    animation-name: hoverOff;
+    animation-duration: .5s;
+    border: 1px solid rgb(0, 55, 107);
+
+    &:hover {
+      animation-name: hoverOn;
+      animation-duration: .5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
 }
 
 .card-description {
   position: absolute;
-  height: 100%;
-  width: 135%;
-  top: 25%;
-  left: 60%;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
 }
