@@ -26,7 +26,7 @@
   position: relative;
   display: flex;
   overflow: hidden;
-  border-radius: 3%;
+  border-radius: 1%;
 }
 
 .card-txt {
@@ -35,7 +35,7 @@
   justify-content: center;
   width: 100%;
   height: 15%;
-  background-color: $tealColor;
+  background-color: $offTealColor;
   position: absolute;
   font-size: 2rem;
   color: $silverColor;
@@ -43,7 +43,7 @@
   top: 8%;
   left: 50%;
   transform:translate(-50%, -50%);
-  border-bottom: 3px solid $offTealColor;
+  border-bottom: 3px solid $tealColor;
 }
 
 .card-img{

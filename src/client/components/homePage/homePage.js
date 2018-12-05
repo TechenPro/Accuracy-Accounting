@@ -12,6 +12,15 @@ export default class homePage extends Component {
             <Header/>,
             <div className='headerSpacer'></div>,
             <div className='city'>
+                <div className='city-text'>
+                    < div className = 'city-text-main' >
+                    Accuracy
+                    </div>
+
+                    < div className = 'city-text-sub' >
+                    Accounting On-Point.
+                    </div>
+                </div>
                 <ImageLink
                     imageurl = 'https://www.muralswallpaper.com/app/uploads/saturated-london-cityscape-city-plain.jpg'
                 /> 
