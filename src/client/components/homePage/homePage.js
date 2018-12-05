@@ -18,11 +18,12 @@ export default class homePage extends Component {
                     </div>
 
                     < div className = 'city-text-sub' >
-                    Accounting On-Point.
+                    Accounting < div className = 'city-text-sub-img'> <img src='http://images.clipartpanda.com/crosshair-clipart-crosshair-hi.png'></img></div>n-Point.
                     </div>
                 </div>
                 <ImageLink
-                    imageurl = 'https://www.muralswallpaper.com/app/uploads/saturated-london-cityscape-city-plain.jpg'
+                    className='centerImg'
+                    imageurl = 'https://cdn.dribbble.com/users/7162/screenshots/1888419/open-uri20150119-12-2b4861'
                 /> 
             
             </div>,           
@@ -95,7 +96,7 @@ export default class homePage extends Component {
                     link = '#' / >
                     < IndustryCard title = 'Property Managment'
                     description = 'The FitnessGram Pacer Test...'
-                    url = 'https://www.placecage.com/900/900'
+                    url = 'https://www.placecage.com/gif/900/900'
                     link = '#' / >
                     < IndustryCard title = 'Wholesale & Distribution'
                     description = 'The FitnessGram Pacer Test...'
@@ -117,6 +118,19 @@ export default class homePage extends Component {
             </div>,
             <div className='insightHolder'>
                 <div className='insight-title'>Insights</div>
+                < div className = 'insight' >
+                    <div className = 'insight-quote' >
+                    "They helped my sue my ex-wife! And I won, too!" </div> 
+                    <div className = 'insight-reference' >
+                    -Harry S.Truman 
+                    </div> 
+                </div>
+                <div className = 'insight' >
+                    <div className = 'insight-quote' >
+                    "They helped my ex-husband sue me! And I lost!" </div> 
+                    <div className = 'insight-reference' >
+                    -Harry S.Truman's Lesser Known Ex-Wife, Martha </div> 
+                </div>
             </div>, 
            <Footer />
         ]

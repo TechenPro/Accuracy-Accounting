@@ -14,7 +14,7 @@ export default class industryCard extends Component {
                 <div className='card-img'>
                     <ImageLink
                         imageurl = {this.props.url}
-                        linkUrl={this.props.link}
+                        // linkUrl={this.props.link}
                     />
                 <div className='card-txt'>
                     {this.props.title}
