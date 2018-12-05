@@ -10,21 +10,5 @@ function tokenForUser(user) {
 }
 
 export function signIn(fields, success) {
-    return function(dispatch) {
-
-        const user = {
-            id: 156,
-            ...fields
-        };
-
-        dispatch({
-            type: AUTHENTICATE_USER,
-            payload: {user}
-        })
-
-        const token = tokenForUser(user);
-        localStorage.setItem('token', token);
-        success();
-
-    }
+    success();
 }
