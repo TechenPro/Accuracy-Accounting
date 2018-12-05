@@ -1,25 +1,81 @@
-ul {
-    list-style-type: none;
+.header-btn-holder {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    max-height: 75px;
+    min-height: 50px;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(0, 55, 107);
+    display: flex;
+    justify-content: space-between;
+    background-color: $tealColor;
+    text-align: center;
+    border-bottom: 3px solid $offTealColor;
+
+    &-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    &-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
 }
 
-li {
-    float: left;
+.header-center-logo
+{
+    // margin: 0px 20px 0px 20px;
+    transition: all 500ms ease;
+    background-color: $offTealColor;
+    display: flex;
+    min-width: 115px;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 75% 100%, 50% 100%, 25% 100%, 0% 60%, 0 0);
+    clip-path: polygon(100% 0, 100% 60%, 75% 100%, 50% 100%, 25% 100%, 0% 60%, 0 0);
+
+    &:hover
+    {
+        transition: all 500ms ease;
+        // -webkit-clip-path: polygon(50% 0, 75% 0, 100% 40%, 100% 100%, 0 100%, 0 40%, 25% 0);
+        // clip-path: polygon(50% 0, 75% 0, 100% 40%, 100% 100%, 0 100%, 0 40%, 25% 0);
+        transform: rotate(540deg);
+    }
+
+    img
+    {
+        max-height: 50px;
+        max-width: 50px;
+    }
 }
 
-li a {
-    display: block;
-    color: white;
+.header-btn {
+    width: 100%;
+    display: flex;
+    color: $silverColor;
     font-size: 1.5rem;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     padding: 14px 50px;
     text-decoration: none;
-}
+    transition: all 500ms ease-in-out;
 
-li a:hover {
-    background-color: #111;
-    text-decoration: none;
+    &:hover {
+        transition: all 500ms ease-in-out;
+        background-color: $offTealColor;
+        color: $offSilverColor;
+
+        & a
+        {
+            text-decoration: none;
+        }
+    }
 }

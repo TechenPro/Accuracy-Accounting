@@ -1,3 +1,14 @@
+body
+{
+    display: inline-block;
+    background-color: $offSilverColor;
+}
+
+.headerSpacer
+{
+    max-height: 75px;
+    min-height: 50px;
+}
 .home-page {
     position: absolute;
     height: 200px;
@@ -10,27 +21,117 @@
     height: auto;
 }
 
-.city img {
+.city
+{
+    width: 100%;
+    height: 85vh;
+    min-height: 650px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-text
+    {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        left: 0%;
+        transform: (-50%, -50%);
+        text-align: center;
+
+        &-main
+        {
+            color: $silverColor;
+            text-shadow: 0px 0px 10px $tealColor;
+            font-size: 11rem;
+        }
+        &-sub
+        {
+            color: $offSilverColor;
+            text-shadow: 0px 0px 10px $offTealColor;
+            display: flex;
+            justify-content: center;
+            font-size: 5rem;
+
+            &-img
+            {
+                margin-left: 15px;
+                width: 5rem;
+                height: 5rem;
+
+                img
+                {
+                    filter: drop-shadow(0px 0px 10px $offTealColor);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .centerImg 
+    {
+        // position: relative;
+        width: 100%;
+        height: 100%;
+        border-bottom: 5px solid $offSilverColor;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        img
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.servicesHolder
+{
+    min-height: 200px;
+    padding-top: 40px;
     width: 100%;
     height: 100%;
-    border: 5px solid rgb(0, 55, 107);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+    box-shadow: 0px 0px 10px 5px grey;
+    display: flex;
+    flex-direction: column;
+    background-color: $silverColor;
 }
-
-.survaces-columns {
-    position: relative;
-    column-count: 3;
-    top: 100px;
-    left: 100px;
-}
-
-.survaces img {
+.services-columns {
+    margin-top: 4rem;
     height: 100%;
-    width: auto;
-    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+.services {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 75%;
+    width: 25%;
+    min-width: 200px;
+    font-size: 12px;
+    text-align: center;
+
+    img
+    {
+        min-height: 125px;
+        min-width: 125px;
+        max-height: 250px;
+        max-width: 250px;
+        height: 100%;
+        width: 100%;
+    }
+}
+.title-services {
+    text-align: center;
+    color: black;
+    font-size: 4rem;
 }
 
 .footer {
@@ -38,32 +139,111 @@
     top: 300px;
     height: 300px;
     width: 100%;
-    background-color: rgb(0, 55, 107);
+    background-color: gray;
     column-count: 3;
 }
 
 .footer-txt {
     position: relative;
-    color: white;
+    color: $silverColor;
     left: 50px;
     font-size: 15px;
 }
 
-.title-services {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    top: 50px;
+
+.industriesHolder
+{
+    padding-top: 40px;
+    margin-bottom: 45px;
+    height: 100%;
+    min-height: 200px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    box-shadow: 0px 10px 50px 15px grey;
+    font-size: 12px;
+    align-items: center;
+
+    .title-industries {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 100%;
+        color: black;
+        font-size: 4rem;
+    }
+
+    .industries-cards
+    {
+        padding-top: 35px;
+        height: 70%;
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+        align-items: center;
+        justify-items: center;
+
+        .industryCard
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
-.title-industries {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    top: 120px;
+.insightHolder
+{
+    background-color: $silverColor;
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+
+    .insight-title
+    {
+        grid-row: 1;
+        grid-column: 1/3;
+        padding-top: 40px;
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+    }
+
+    .insight
+    {
+        justify-self: center;
+        align-self: center;
+        grid-row: 2;
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+        grid-template-columns: 1fr;
+
+        &-quote
+        {
+            font-size: 3rem;
+        }
+
+        &-reference
+        {
+            justify-self: right;
+            font-size: 2rem;
+        }
+    }
 }
+
 
 a {
     color: white;
