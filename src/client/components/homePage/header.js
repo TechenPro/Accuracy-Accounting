@@ -3,16 +3,25 @@ import React, { Component } from 'react';
 export default class header extends Component {
     render() {
         return (
-            <ul>
-                <li><a class="active" href="/homePage">Home</a></li>
-                <li><a href="#news">Services</a></li>
-                <li><a href="/industries">Industries</a></li>
-                <li><a href="#contact">Schedule A Time</a></li>
-                <li><a href="#about">Insights</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="#about">Contact</a></li>
-                <li><a href="/">Client Login</a></li>
-            </ul>
-        )
+            <div className = 'header-btn-holder'>
+                < div className='header-btn-holder-left' >
+                    <div className='header-btn'> <a class="active header-btn-link" href="/homePage"> Home </a></div>
+                    <div className='header-btn'> <a className='header-btn-link' href="#news" > Services </a></div>
+                    <div className='header-btn'> <a className='header-btn-link' href="/industries"> Industries </a></div >
+                    <div className='header-btn'><a className='header-btn-link' href="#contact">Schedule A Time</a></div>
+                </div>
+
+                <div className='header-center-logo'>
+                    < img src ='http://images.clipartpanda.com/crosshair-clipart-crosshair-hi.png'></img>
+                </div>
+
+                < div className='header-btn-holder-right' >
+                    <div className='header-btn'> <a className='header-btn-link' href="#about"> Insights </a></div>
+                    <div className='header-btn'><a className='header-btn-link' href="/about">About</a></div>
+                    <div className='header-btn'><a className='header-btn-link' href="#about">Contact</a></div>
+                    <div className='header-btn'><a className='header-btn-link' href="/">Client Login</a></div>
+                </div>
+            </div>
+            )
+        }
     }
-}
