@@ -10,6 +10,7 @@ export default class homePage extends Component {
     render() {
         return [
             <Header/>,
+            <div className='headerSpacer'></div>,
             <div className='city'>
                 <ImageLink
                     imageurl = 'https://www.muralswallpaper.com/app/uploads/saturated-london-cityscape-city-plain.jpg'
@@ -55,12 +56,59 @@ export default class homePage extends Component {
                 </div>
 
                 <div className='industries-cards'>
-                    <IndustryCard/>
-                    <IndustryCard />
-                    <IndustryCard />
+                    < IndustryCard title = 'Construction'
+                    description = 'The FitnessGram Pacer Test...' 
+                    url='https://www.placecage.com/900/900' 
+                    link='#'/ >
+                    < IndustryCard title = 'Real Estate'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Not-for-Profit'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Professional Services'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Energy'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Transportation'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Agriculture'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Property Managment'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Wholesale & Distribution'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Manufacturing'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Communications'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
+                    < IndustryCard title = 'Benefit Plans'
+                    description = 'The FitnessGram Pacer Test...'
+                    url = 'https://www.placecage.com/900/900'
+                    link = '#' / >
                 </div>
             </div>,
-                   
+            <div className='insightHolder'>
+                <div className='insight-title'>Insights</div>
+            </div>, 
            <Footer />
         ]
     }
