@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const useBodyParser = bodyParser.json({ type: '*/*'});
 
 const app = express();
+const port = process.env.PORT || 8080;
 
 
 app.use(express.static(path.join(__dirname, '/dist/')));
@@ -17,15 +18,15 @@ app.post("/api/getUsername", useBodyParser, (req, res) => {
   user ? authOp.authenticate(res, user, req.body.password) : res.status(422).send({ error: 'Inccorect Username or Password'})
 });
 
-app.post("/api/storeUsername", useBodyParser, (req, res) => {
-  console.log(req.body);
-  const user = req.body.name;
-  fileOp.writeData(path.join(__dirname + '/dist/data/test.json'), {user: user});
-  res.send({
-    success: true,
-    message: 'Wrote Data',
-  });
-});
+// app.post("/api/storeUsername", useBodyParser, (req, res) => {
+//   console.log(req.body);
+//   const user = req.body.name;
+//   fileOp.writeData(path.join(__dirname + '/dist/data/test.json'), {user: user});
+//   res.send({
+//     success: true,
+//     message: 'Wrote Data',
+//   });
+// });
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/dist/index.html'));
@@ -33,4 +34,4 @@ app.get('*', (req, res) => {
 
 // Start the server on port 8080
 const server = http.createServer(app);
-server.listen(8080, () => console.log("Listening on port 8080!"));
+server.listen(port, () => console.log(`Listening on port ${port}!`));

@@ -27,6 +27,7 @@ import homePage from './components/homePage/homePage';
 import about from './components/aboutPage';
 import industries from './components/industriesPage';
 import services from './components/services';
+import Calander from './components/calander/calander';
 
 
 function main() {
@@ -39,7 +40,7 @@ function main() {
           { /* Only allows one path to be rendered at any time */ }
           <Switch>
 
-            <Route path='/' exact component={Login}/>
+            <Route path='/' exact component={Calander}/>
             <RequireAuth path='/protected' component={App} authenticated={true}/>
             <Route path='/homePage' component={homePage}/>
             <Route path='/about' component={about}/>

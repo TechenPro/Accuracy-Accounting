@@ -1,0 +1,37 @@
+.calander {
+    height: 80vh;
+    width: 80vw;
+    justify-self: center;
+    background-color: cornflowerblue;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.calander-square {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+
+    display: grid;
+
+    &_body {
+        grid-area: 1 / 1;
+        height: 100%;
+        width: 100%;
+        // background-color: black;
+        position: relative;
+
+        &:hover {
+            box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.75);
+        }
+    }
+}
+
+@for $i from 1 to 7 {
+    .calander-square-#{$i} {
+        grid-column: #{$i}/#{$i + 1}
+    }
+}
