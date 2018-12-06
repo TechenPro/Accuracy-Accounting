@@ -122,14 +122,14 @@ export default class homePage extends Component {
                     <div className = 'insight-quote' >
                     "They helped my sue my ex-wife! And I won, too!" </div> 
                     <div className = 'insight-reference' >
-                    -Harry S.Truman 
+                    -Harry S. Truman 
                     </div> 
                 </div>
                 <div className = 'insight' >
                     <div className = 'insight-quote' >
                     "They helped my ex-husband sue me! And I lost!" </div> 
                     <div className = 'insight-reference' >
-                    -Harry S.Truman's Lesser Known Ex-Wife, Martha </div> 
+                    -Harry S. Truman's Lesser Known Ex-Wife, Martha </div> 
                 </div>
             </div>, 
            <Footer />

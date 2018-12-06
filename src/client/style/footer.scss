@@ -1,0 +1,51 @@
+.footer {
+    height: 175px;
+    width: 100%;
+    background-color: grey;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+}
+
+.footer-txt {
+    color: $silverColor;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+
+    &-title
+    {
+        width: 100%;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    &-sub
+    {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 3.5rem;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+
+        &-center
+        {
+            width: 100%;
+            grid-column: 1/3;
+        }
+        &-left 
+        {
+            align-self: flex-start;
+        }
+        &-right 
+        {
+            align-self: flex-end;
+        }
+    }
+}
