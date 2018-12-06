@@ -13,9 +13,9 @@ class LoginForm extends Component {
                 <Field
                     className='login-form_email'
                     placeholder='Enter Email'
-                    name='email'
-                    type='email'
-                    title='Email'
+                    name='name'
+                    type='name'
+                    title='Name'
                     component={FormInput}
                 />
                 <Field

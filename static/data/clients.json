@@ -1,0 +1,14 @@
+{
+    "0": {
+        "id": 0,
+        "username": "Gilgamesh",
+        "password": "apple"
+    },
+    
+    "1": {
+        "id": 1,
+        "username": "Johnson",
+        "password": "frog"
+    }
+
+}

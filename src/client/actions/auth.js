@@ -1,14 +1,22 @@
-import jwt from 'jwt-simple';
+import axios from 'axios';
 
 import {
     AUTHENTICATE_USER
 } from './types';
 
-function tokenForUser(user) {
-    const timestamp = new Date().getTime();
-    return jwt.encode({ sub: user.id, iat: timestamp }, config.secret);
-}
 
 export function signIn(fields, success) {
-    success();
+    return function(dispatch) {
+        axios.post('/api/getUsername', fields)
+            .then(response => {
+                dispatch({
+                    type: AUTHENTICATE_USER,
+                    payload: response.data
+                })
+                const {token} = response.data;
+                localStorage.setItem('token', token);
+                success();
+            })
+            .catch(err => {console.log(err)})
+    }
 }
