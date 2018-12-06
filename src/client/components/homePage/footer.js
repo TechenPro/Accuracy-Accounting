@@ -49,7 +49,10 @@ export default class Page404 extends Component {
                     <h4>How to Ensure Employee Loyalty in a Competitive Job Market</h4>
                     <h4>Intern Insights: The Importance of Culture</h4>
                 </div>*/}
-
+                
+                <div className='footer-legal'>
+                    &copy;Copyright 2019 Accuracy < a href = '/legal' >More Info</a>
+                </div>
             </div>
         )
     }

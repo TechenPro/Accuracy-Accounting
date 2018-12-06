@@ -18,7 +18,7 @@ export default class homePage extends Component {
                     </div>
 
                     < div className = 'city-text-sub' >
-                    Accounting < div className = 'city-text-sub-img'> <img src='http://images.clipartpanda.com/crosshair-clipart-crosshair-hi.png'></img></div>n-Point.
+                    Accounting < div className = 'city-text-sub-img' ><img src = 'https://png2.kisspng.com/20180630/xxv/kisspng-shooting-target-target-corporation-clip-art-5b37f24f07bd91.8874108015303931670317.png' ></img></div> n - Point.
                     </div>
                 </div>
                 <ImageLink
