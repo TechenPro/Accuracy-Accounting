@@ -72,10 +72,6 @@
         transition: all 500ms ease-in-out;
         background-color: $offTealColor;
         color: $offSilverColor;
-
-        & a
-        {
-            text-decoration: none;
-        }
+        text-decoration: none;
     }
 }

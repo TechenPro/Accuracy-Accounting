@@ -6,18 +6,18 @@ export default class header extends Component {
             <div className = 'header-btn-holder'>
                 < div className='header-btn-holder-left' >
                     <a className='header-btn' href="/services" > Services </a>
-                    < div className = 'header-btn' > < a className = 'header-btn-link'href = "#about" > Insights </a></div >
-                    <div className='header-btn'><a className='header-btn-link' href="#contact">Schedule A Time</a></div>
+                    < a className = 'header-btn'href = "#about" > Insights </a>
+                    <a className='header-btn' href="#contact">Schedule A Time</a>
                 </div>
 
-                <div className='header-center-logo'>
+                <a className='header-center-logo' href="/homePage">
                     < img src ='http://images.clipartpanda.com/crosshair-clipart-crosshair-hi.png'></img>
-                </div>
+                </a>
 
                 < div className='header-btn-holder-right' >
-                    <div className='header-btn'><a className='header-btn-link' href="/about">About</a></div>
-                    <div className='header-btn'><a className='header-btn-link' href="#about">Contact</a></div>
-                    <div className='header-btn'><a className='header-btn-link' href="/">Client Login</a></div>
+                    <a className='header-btn' href="/about">About</a>
+                    <a className='header-btn' href="#about">Contact</a>
+                    <a className='header-btn' href="/">Client Login</a>
                 </div>
             </div>
             )
