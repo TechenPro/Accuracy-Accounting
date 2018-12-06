@@ -10,7 +10,7 @@
     position: relative;
     color: rgb(0, 55, 107);
     font-size: 25px;
-    top: 10px;
+    top: 40px;
 }
 
 
@@ -28,4 +28,30 @@
     font-size: 15px;
     top: 35px;
     text-align: center;
+}
+
+.mini-subheading {
+    position: relative;
+    color: rgb(0, 55, 107);
+    font-size: 20px;
+    top: 40px;
+}
+
+.micro-subheading {
+    position: relative;
+    color: rgb(0, 55, 107);
+    font-size: 18px;
+    top: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.extra-margin {
+    position: relative;
+    color: black;
+    font-size: 15px;
+    top: 35px;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
