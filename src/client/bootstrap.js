@@ -26,6 +26,7 @@ import Login from './components/auth/login';
 import homePage from './components/homePage/homePage';
 import about from './components/aboutPage';
 import industries from './components/industriesPage';
+import services from './components/services';
 
 
 function main() {
@@ -43,6 +44,7 @@ function main() {
             <Route path='/homePage' component={homePage}/>
             <Route path='/about' component={about}/>
             <Route path='/industries' component={industries}/>
+            <Route path='/services' component={services}/>
             {/* Catches All Invalid Links */}
             <Route component={Page404}/>
 
