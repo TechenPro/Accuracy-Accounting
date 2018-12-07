@@ -3,16 +3,16 @@ import { connect } from 'react-redux';
 
 import * as actions from '../../actions';
 
-import CalanderSquare from './calander-square';
+import CalendarSquare from './calendar-square';
 
-class CalanderGrid extends Component {
+class CalendarGrid extends Component {
 
     componentWillMount() {
         this.props.fetchSchedule();
     }
 
 
-    generateCalander = (days, offset, events) => {
+    generateCalendar = (days, offset, events) => {
         let default_square = {title:'Locked', modifierClass:'locked'};
         let squares = [];
         let i;
@@ -22,16 +22,16 @@ class CalanderGrid extends Component {
 
         if(offset) {
             for(i=1; i <= offset; i++) {
-                squares.push(<CalanderSquare date={(30-offset) + i} day={i} {...default_square} key={key}/>)
+                squares.push(<CalendarSquare date={(30-offset) + i} day={i} {...default_square} key={key}/>)
                 key++;
             }
         };
 
         for(i=1; i <= days; i++) {
             if(dateList.includes(i)){
-                squares.push(<CalanderSquare {...eventList[i]} key={key} handleSubmit={this.handleSubmit}/>);
+                squares.push(<CalendarSquare {...eventList[i]} key={key} handleSubmit={this.handleSubmit}/>);
             } else {
-                squares.push(<CalanderSquare date={i} day={i % 7 + offset} key={key} handleSubmit={this.handleSubmit}/>); 
+                squares.push(<CalendarSquare date={i} day={i % 7 + offset} key={key} handleSubmit={this.handleSubmit}/>); 
             }
 
 
@@ -41,7 +41,7 @@ class CalanderGrid extends Component {
 
         i = 1;
         while(squares.length < 42) {
-            squares.push(<CalanderSquare date={i} day={i % 7 + runningOffset} {...default_square} key={key}/>);
+            squares.push(<CalendarSquare date={i} day={i % 7 + runningOffset} {...default_square} key={key}/>);
             i++;
             key++;
         }
@@ -64,8 +64,8 @@ class CalanderGrid extends Component {
     render() {
         const events = this.props.events;
         return (
-            <div className='calander'>
-                {this.generateCalander(31, 5, events)}
+            <div className='calendar'>
+                {this.generateCalendar(31, 5, events)}
             </div>
         )
     }
@@ -78,6 +78,6 @@ function mapStateToProps(state) {
     return events;
 }
 
-CalanderGrid = connect(mapStateToProps, actions)(CalanderGrid);
+CalendarGrid = connect(mapStateToProps, actions)(CalendarGrid);
 
-export default CalanderGrid;
+export default CalendarGrid;

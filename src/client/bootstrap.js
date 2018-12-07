@@ -27,7 +27,7 @@ import homePage from './components/homePage/homePage';
 import about from './components/aboutPage';
 import industries from './components/industriesPage';
 import services from './components/services';
-import Calander from './components/calander/calander';
+import Calendar from './components/calendarPage';
 import legal from './components/legal'
 import contact from './components/contact';
 import insights from './components/insights';
@@ -43,7 +43,7 @@ function main() {
           { /* Only allows one path to be rendered at any time */ }
           <Switch>
 
-            <Route path='/' exact component={Calander}/>
+            <Route path='/' exact component={Calendar}/>
             <Route path='/login' component={Login}/>
             <RequireAuth path='/protected' component={App} authenticated={true}/>
             <Route path='/homePage' component={homePage}/>

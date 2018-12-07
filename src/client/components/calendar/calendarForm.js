@@ -3,15 +3,15 @@ import { reduxForm, Field } from "redux-form";
 
 import { FormInput, FormButton } from '../common/formFields';
 
-class CalanderForm extends Component {
+class CalendarForm extends Component {
     render() {
         const {handleSubmit, handleCancel} = this.props;
 
         return (
-            <form onSubmit={handleSubmit} className='calander-form'>
+            <form onSubmit={handleSubmit} className='calendar-form'>
                 <h1>Log In to Continue...</h1>
                 <Field
-                    className='calander-form_time'
+                    className='calendar-form_time'
                     placeholder='Enter Email'
                     name='time'
                     type='time'
@@ -19,7 +19,7 @@ class CalanderForm extends Component {
                     component={FormInput}
                 />
                 <Field
-                    className='calander-form_cancel'
+                    className='calendar-form_cancel'
                     name='cancel'
                     type='cancel'
                     title='Cancel'
@@ -27,7 +27,7 @@ class CalanderForm extends Component {
                     component={FormButton}
                 />
                 <Field
-                    className='calander-form_submit'
+                    className='calendar-form_submit'
                     name='schedule'
                     type='submit'
                     title='Schedule'
@@ -38,8 +38,8 @@ class CalanderForm extends Component {
     }
 }
 
-CalanderForm = reduxForm({
-    form: 'calander'
-})(CalanderForm);
+CalendarForm = reduxForm({
+    form: 'calendar'
+})(CalendarForm);
 
-export default CalanderForm;
+export default CalendarForm;

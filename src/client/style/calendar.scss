@@ -1,7 +1,9 @@
-.calander {
+.calendar {
+    margin-top: 10px;
     height: 80vh;
     width: 80vw;
     justify-self: center;
+    align-self: center;
     background-color: $silverColor;
 
     display: grid;
@@ -14,7 +16,7 @@
 }
 
 
-.calander-square {
+.calendar-square {
     height: 100%;
     width: 100%;
     justify-self: center;
@@ -29,7 +31,7 @@
         position: relative;
 
         label {
-            color:white;
+            color: white;
         }
     }
 
@@ -39,7 +41,7 @@
         background-color: $offSilverColor;
         z-index: 10;
 
-        .calander-square_body label {
+        .calendar-square_body label {
             color: black;
             text-decoration: none;
         }
@@ -52,17 +54,17 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0,0,0, .5);
+        background-color: rgba(0, 0, 0, .5);
         z-index: 10;
     }
 }
 
-.calander-square_locked {
+.calendar-square_locked {
     background-color: $offTealColor;
 }
 
 @for $i from 1 to 7 {
-    .calander-square-#{$i} {
+    .calendar-square-#{$i} {
         grid-column: #{$i}/#{$i + 1}
     }
 }

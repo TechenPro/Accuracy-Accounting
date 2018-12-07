@@ -19,18 +19,18 @@ app.post("/api/signin", useBodyParser, (req, res) => {
 });
 
 app.post("/api/newEvent", useBodyParser, (req, res) => {
-  let events = fileOp.jsonToArray(fileOp.readData(path.join(__dirname + '/dist/data/calander.json')));
+  let events = fileOp.jsonToArray(fileOp.readData(path.join(__dirname + '/dist/data/calendar.json')));
   events.push(req.body);
   let events_json = {};
   events.forEach(event => {
     events_json[events.indexOf(event)] = event;
   });
-  fileOp.writeData(path.join(__dirname + '/dist/data/calander.json'), events_json);
+  fileOp.writeData(path.join(__dirname + '/dist/data/calendar.json'), events_json);
   res.send(events);
 })
 
 app.get("/api/getSchedule", (req, res) => {
-  const json_data = fileOp.readData(path.join(__dirname + '/dist/data/calander.json'));
+  const json_data = fileOp.readData(path.join(__dirname + '/dist/data/calendar.json'));
   const schedule = fileOp.jsonToArray(json_data);
   res.send(schedule);
 });

@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 
 import * as actions from '../../actions';
 
-import ScheduleForm from './calanderForm';
+import ScheduleForm from './calendarForm';
 
-class CalanderSquare extends Component {
+class CalendarSquare extends Component {
 
     constructor() {
         super();
@@ -32,9 +32,9 @@ class CalanderSquare extends Component {
     render() {
         const {date, day, modifierClass, title, time} = this.props;
         return (
-            <div className={`${modifierClass ? `calander-square_${modifierClass}` : 'calander-square'} calander-square-${day} `} id={modifierClass ? '' : `square-${date}`}>
+            <div className={`${modifierClass ? `calendar-square_${modifierClass}` : 'calendar-square'} calendar-square-${day} `} id={modifierClass ? '' : `square-${date}`}>
                 
-                <a className='calander-square_body' onClick={this.togglePopup.bind(this)}>
+                <a className='calendar-square_body' onClick={this.togglePopup.bind(this)}>
                     <label className='date'>{date}</label>
                     <label className='title'>{title ? title : "Open"}</label>
                     {title ? <label className='time'>{time}</label> : ""}
@@ -57,4 +57,4 @@ function mapStateToProps(state) {
     return {user};
 }
 
-export default connect(mapStateToProps, actions)(CalanderSquare);
+export default connect(mapStateToProps, actions)(CalendarSquare);
