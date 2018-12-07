@@ -83,11 +83,11 @@ export default class homePage extends Component {
                     url= 'https://images.pexels.com/photos/1345085/pexels-photo-1345085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Energy'
-                        description = 'The FitnessGram Pacer Test...'
+                        description= 'It is important to work with a team of advisors that know the complexity of the energy industry so you can address important industry issues.'
                     url= 'https://images.pexels.com/photos/459728/pexels-photo-459728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Transportation'
-                        description = 'The FitnessGram Pacer Test...'
+                        description= 'The transportation industry is surprisingly technical and regulated industry. Our transportation team has the skills and experience necessary to understand and help you with these logistics.'
                     url= 'https://images.pexels.com/photos/243116/pexels-photo-243116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Agriculture'
@@ -95,11 +95,11 @@ export default class homePage extends Component {
                     url= 'https://images.pexels.com/photos/175389/pexels-photo-175389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Property Managment'
-                        description= 'The FitnessGram Pacer Test...'
+                        description= 'Our experience with all aspects of the real estate industry provide us with the knowledge to advise you in this similar industry. '
                     url= 'https://images.pexels.com/photos/273683/pexels-photo-273683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Wholesale & Distribution'
-                        description = 'The FitnessGram Pacer Test...'
+                        description= 'No matter what wholesale and distribution issue you have we have the knowledge and experience to ensure you keep accurate order fulfillment and delivery.'
                     url= 'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Manufacturing'
@@ -111,7 +111,7 @@ export default class homePage extends Component {
                     url= 'https://images.pexels.com/photos/270286/pexels-photo-270286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Benefit Plans'
-                        description = 'The FitnessGram Pacer Test...'
+                        description= 'At Accuracy we ensure the highest quality services leaving our clients with the highest quality results so that they can see their business expand and grow.'
                     url= 'https://images.pexels.com/photos/990818/pexels-photo-990818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                 </div>

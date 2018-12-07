@@ -6,7 +6,7 @@ export default class header extends Component {
             <div className = 'header-btn-holder'>
                 < div className='header-btn-holder-left' >
                     <a className='header-btn' href="/services" > Services </a>
-                    < a className = 'header-btn'href = "#about" > Insights </a>
+                    < a className = 'header-btn'href = "/insights" > Insights </a>
                     <a className='header-btn' href="#contact">Schedule A Time</a>
                 </div>
 

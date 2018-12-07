@@ -10,12 +10,14 @@ export default class Page404 extends Component {
                     </div>
                     <div className='footer-txt-sub'>
                         <div className='footer-txt-sub-left'>
-                            Phone: 1(800)-867-309<br></br>
-                            Email: accuracy@mailinator.com
+                            Phone: 1(800)-867-5309<br></br>
+                            Email: accuracy@mailinator.com<br></br>
+                            Twitter: @Accuracy
                         </div>
                         <div className='footer-txt-sub-right'>
                             Fax: 1(800)-867-3101 <br></br>
-                            Address: 19 Pennsylvania Ave
+                            Address: 301 W Vine St, <br></br>
+                            Tooele, Ut 84074
                         </div>
                     </div>
 
