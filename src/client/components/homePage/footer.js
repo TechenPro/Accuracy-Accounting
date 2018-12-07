@@ -12,10 +12,10 @@ export default class Page404 extends Component {
                         <div className='footer-txt-sub-left'>
                             Phone: 1(800)-867-5309<br></br>
                             Email: accuracy@mailinator.com<br></br>
-                            Find us on social media: 
-                            <a href='https://www.twitter.com/login'><i class="fab fa-twitter"></i></a> 
-                            <a href='https://www.facebook.com/login'><i class="fab fa-facebook"></i></a>
-                            <a href='https://www.linkedin.com/login'><i class="fab fa-linkedin"></i></a>
+                            Find us on social media:  
+                            <a href='https://www.twitter.com/login'> <img className='footer-media-logo' src='http://pngimg.com/uploads/twitter/twitter_PNG34.png'></img></a>
+                            <a href='https://www.facebook.com/login'><img className='footer-media-logo' src='https://facebookbrand.com/wp-content/themes/fb-branding/assets/images/fb-logo.png'></img></a>
+                            <a href='https://www.linkedin.com'><img className='footer-media-logo' src='http://ericksonestatesla.com/wp-content/uploads/2018/05/linkedin-logo-copy.png'></img></a>
                         </div>
                         <div className='footer-txt-sub-right'>
                             Fax: 1(800)-867-3101 <br></br>
@@ -34,12 +34,12 @@ export default class Page404 extends Component {
                         <div className='footer-txt-sub-left'>
                             <a href='/services'>Services</a><br></br>
                             <a href='/insights'>Insights</a><br></br>
-                            <a href ='#'> Schedule a Time</a>
+                            <a href ='/client-schedular'> Schedule a Time</a>
                         </div>
                         <div className='footer-txt-sub-right'>
                             <a href='/about'>About</a><br></br>
                             <a href='/contact'>Contact</a><br></br>
-                            <a href='/'>Client Login</a>
+                            <a href='/login'>Client Login</a>
                         </div>
                     </div>
                 </div>

@@ -44,7 +44,7 @@ export default class insights extends Component {
 
                     <div className='faq-answers'>
                         You can schedule a meeting at any open time slot
-                        <a className='insights-link' href='/schedule'> here</a>.
+                        <a className='insights-link' href='/client-schedular'> here</a>.
                         You can also send us and email or give us a call for smaller inquires. Our contact information can be found
                         <a className='insights-link' href='/contact'> here</a>.
                     </div>

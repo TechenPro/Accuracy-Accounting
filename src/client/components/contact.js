@@ -8,6 +8,26 @@ export default class contact extends Component {
     render() {
         return [
              <Header />, <div className='headerSpacer'></div>,
+             <div className='contact'>
+                <div className='contact-title'>Accuracy<hr></hr></div>
+                <div className='contact-txt'>
+                    <div className='contact-txt-left'>
+                        Phone: 1(800)-867-5309<br></br>
+                        Email: accuracy@mailinator.com<br></br>
+                        Find us on social media:  
+                        <div>
+                        <a href='https://www.twitter.com/login'> <img className='contact-media-logo' src='http://pngimg.com/uploads/twitter/twitter_PNG34.png'></img></a>
+                        <a href='https://www.facebook.com/login'><img className='contact-media-logo' src='https://facebookbrand.com/wp-content/themes/fb-branding/assets/images/fb-logo.png'></img></a>
+                        <a href='https://www.linkedin.com'><img className='contact-media-logo' src='http://ericksonestatesla.com/wp-content/uploads/2018/05/linkedin-logo-copy.png'></img></a>
+                        </div> 
+                    </div>
+                    <div className='contact-txt-right'>
+                        Fax: 1(800)-867-3101 <br></br>
+                        Address: 301 W Vine St, <br></br>
+                        Tooele, Ut 84074
+                    </div>
+                    </div>
+                </div>,
 //             <head>
 //                 <meta charset='utf-8' />
 //                 <title>Display a map</title>

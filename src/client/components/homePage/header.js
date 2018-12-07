@@ -7,7 +7,7 @@ export default class header extends Component {
                 < div className='header-btn-holder-left' >
                     <a className='header-btn' href="/services" > Services </a>
                     < a className = 'header-btn'href = "/insights" > Insights </a>
-                    <a className='header-btn' href="/calendar">Schedule A Time</a>
+                    <a className='header-btn' href="/client-schedular">Schedule A Time</a>
                 </div>
 
                 <a className='header-center-logo' href="/">
@@ -17,7 +17,7 @@ export default class header extends Component {
                 < div className='header-btn-holder-right' >
                     <a className='header-btn' href="/about">About</a>
                     <a className='header-btn' href="/contact">Contact</a>
-                    <a className='header-btn' href="/">Client Login</a>
+                    <a className='header-btn' href="/login">Client Login</a>
                 </div>
             </div>
             )

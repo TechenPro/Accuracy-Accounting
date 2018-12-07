@@ -29,7 +29,7 @@ export default class Page404 extends Component {
                 </div>
 
                 <div className='subheading' id='taxes'>
-                    Taxes
+                    Taxes <hr></hr>
                 </div>
 
                     <div className='body-text'>
@@ -81,7 +81,7 @@ export default class Page404 extends Component {
                     </div>
 
                 < div className = 'subheading' id = 'assurances' >
-                    Assurance
+                    Assurance <hr></hr>
                 </div>
 
                     <div className='body-text'>
@@ -131,7 +131,7 @@ export default class Page404 extends Component {
                     </div>
 
             <div className='subheading' id='advisory'>
-                Advisory
+                Advisory <hr></hr>
             </div>
 
                 <div className='body-text'>

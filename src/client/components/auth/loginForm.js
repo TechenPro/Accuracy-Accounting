@@ -9,7 +9,7 @@ class LoginForm extends Component {
 
         return (
             <form onSubmit={handleSubmit} className='login-form'>
-                < div className = 'login-form_title' > Client Login < a href = "/homePage" > < img src = 'https://png2.kisspng.com/20180630/xxv/kisspng-shooting-target-target-corporation-clip-art-5b37f24f07bd91.8874108015303931670317.png'></img></a></div>
+                < div className = 'login-form_title' > Client Login {/*< a href = "/homePage" > < img src = 'https://png2.kisspng.com/20180630/xxv/kisspng-shooting-target-target-corporation-clip-art-5b37f24f07bd91.8874108015303931670317.png'></img></a>*/}</div>
                 <div className="login-form_inner">
                     <Field
                         className='login-form_inner_email'
