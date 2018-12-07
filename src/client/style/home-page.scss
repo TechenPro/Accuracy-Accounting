@@ -154,7 +154,7 @@ body
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 30%;
+        max-height: 50px;
         width: 100%;
         color: black;
         font-size: 4rem;
@@ -225,8 +225,10 @@ body
 
         &-reference
         {
+            align-self: flex-start;
             justify-self: right;
             font-size: 2rem;
+            max-height: 25px;
         }
     }
 }
