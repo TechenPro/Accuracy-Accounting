@@ -9,30 +9,32 @@ class LoginForm extends Component {
 
         return (
             <form onSubmit={handleSubmit} className='login-form'>
-                <h1>Log In to Continue...</h1>
-                <Field
-                    className='login-form_email'
-                    placeholder='Enter Email'
-                    name='name'
-                    type='name'
-                    title='Name'
-                    component={FormInput}
-                />
-                <Field
-                    className='login-form_password'
-                    placeholder='Enter Password'
-                    name='password'
-                    type='password'
-                    title='Password'
-                    component={FormInput}
-                />
-                <Field
-                    className='login-form_login'
-                    name='login'
-                    type='submit'
-                    title='Login'
-                    component={FormButton}
-                />
+                < div className = 'login-form_title' > Client Login < a href = "/homePage" > < img src = 'https://png2.kisspng.com/20180630/xxv/kisspng-shooting-target-target-corporation-clip-art-5b37f24f07bd91.8874108015303931670317.png'></img></a></div>
+                <div className="login-form_inner">
+                    <Field
+                        className='login-form_inner_email'
+                        placeholder='Enter Email'
+                        name='name'
+                        type='name'
+                        title='Name'
+                        component={FormInput}
+                    />
+                    <Field
+                        className='login-form_inner_password'
+                        placeholder='Enter Password'
+                        name='password'
+                        type='password'
+                        title='Password'
+                        component={FormInput}
+                    />
+                    <Field
+                        className='login-form_inner_login'
+                        name='login'
+                        type='submit'
+                        title='Login'
+                        component={FormButton}
+                    />
+                    </div>
             </form>
         )
     }

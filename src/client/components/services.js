@@ -28,7 +28,7 @@ export default class Page404 extends Component {
                     At Accuracy, our experienced professionals will deliver high quality services to help you retain confidence, manage your business, and strengthen your controls.
                 </div>
 
-                <div className='subheading'>
+                <div className='subheading' id='taxes'>
                     Taxes
                 </div>
 
@@ -80,7 +80,7 @@ export default class Page404 extends Component {
                         Estate planning is complicated and doing it on your own can be costly. Most people overlook having the right tools to facilitate the transfer of assets with the least amount of difficulty.
                     </div>
 
-                <div className='subheading'>
+                < div className = 'subheading' id = 'assurances' >
                     Assurance
                 </div>
 
@@ -130,7 +130,7 @@ export default class Page404 extends Component {
                         />
                     </div>
 
-            <div className='subheading'>
+            <div className='subheading' id='advisory'>
                 Advisory
             </div>
 

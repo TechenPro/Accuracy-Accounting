@@ -38,7 +38,7 @@ export default class homePage extends Component {
                             <h1>TAXES</h1>
                             <ImageLink
                             imageurl = 'http://res.publicdomainfiles.com/pdf_view/2/13489785619129.png'
-                                linkUrl='/'
+                                linkUrl='/services#taxes'
                             />
                         </div>
 
@@ -46,7 +46,7 @@ export default class homePage extends Component {
                             <h1>ASSURANCE</h1>
                             <ImageLink
                             imageurl = 'https://png2.kisspng.com/20180612/pi/kisspng-bitmap-clip-art-growth-icon-5b20176f386380.203413681528829807231.png'
-                                linkUrl='/'
+                                linkUrl='/services#assurances'
                             />
                         </div>
 
@@ -54,7 +54,7 @@ export default class homePage extends Component {
                             <h1>ADVISORY</h1>
                             <ImageLink
                             imageurl='http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.med.png'
-                                linkUrl='/'
+                                linkUrl='/services#advisory'
                             />
                         </div>
                 </div>

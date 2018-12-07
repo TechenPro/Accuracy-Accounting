@@ -44,6 +44,7 @@ function main() {
           <Switch>
 
             <Route path='/' exact component={Calander}/>
+            <Route path='/login' component={Login}/>
             <RequireAuth path='/protected' component={App} authenticated={true}/>
             <Route path='/homePage' component={homePage}/>
             <Route path='/about' component={about}/>
