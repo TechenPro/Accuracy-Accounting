@@ -27,13 +27,13 @@ export default class Page404 extends Component {
                     </div>
                     < div className = 'footer-txt-sub' >
                         <div className='footer-txt-sub-left'>
-                            <a href='#'>Services</a><br></br>
-                            <a href='#'>Insights</a><br></br>
+                            <a href='/services'>Services</a><br></br>
+                            <a href='/insights'>Insights</a><br></br>
                             <a href ='#'> Schedule a Time</a>
                         </div>
                         <div className='footer-txt-sub-right'>
                             <a href='/about'>About</a><br></br>
-                            <a href='#'>Contact</a><br></br>
+                            <a href='/contact'>Contact</a><br></br>
                             <a href='/'>Client Login</a>
                         </div>
                     </div>

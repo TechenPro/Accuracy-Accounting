@@ -1,0 +1,45 @@
+.insights {
+    margin: 5rem;
+}
+
+.insights-link {
+    color: rgb(0, 0, 228);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.faq-answers {
+    position: relative;
+    margin: 5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    top: 4rem;
+}
+
+.testimonials {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    top: 4rem;
+    column-count: 3;
+    margin: 7rem;
+    margin-top:0rem;
+}
+
+.testimonial-box {
+    height: 15rem;
+    width: 25rem;
+    padding: 3rem;
+    background-color: $tealColor;
+}
+
+.insights-img img{
+    position: relative;
+    height: 30rem;
+    float: right;
+    padding-top: 10rem;
+    padding-left: 1rem;
+}
