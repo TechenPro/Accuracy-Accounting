@@ -3,8 +3,11 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-  authenticated: false,
-  user: {}
+  authenticated: true,
+  user: {
+    "id": 0,
+    "username": "Gilgamesh",
+  }
 }
 
 export default function(state = INITIAL_STATE, action) {

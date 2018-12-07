@@ -8,12 +8,12 @@ export default function(ComposedComponent) {
     class Authentication extends Component {
         componentWillMount() {
             if(!this.props.authenticated) {
-                history.push('/login');
+                history.push('/home');
             }
         }
         componentWillUpdate(nextProps) {
             if(!nextProps.authenticated) {
-                history.push('/login');
+                history.push('/home');
             }
         }
         render() {

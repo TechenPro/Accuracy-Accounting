@@ -12,7 +12,7 @@ class CalendarGrid extends Component {
     }
 
 
-    generateCalendar = (days, offset, events) => {
+    generateCalendar = (days, offset, current_date, events) => {
         let default_square = {title:'Locked', modifierClass:'locked'};
         let squares = [];
         let i;
@@ -29,9 +29,11 @@ class CalendarGrid extends Component {
 
         for(i=1; i <= days; i++) {
             if(dateList.includes(i)){
-                squares.push(<CalendarSquare {...eventList[i]} key={key} handleSubmit={this.handleSubmit}/>);
+                squares.push(<CalendarSquare {...eventList[i]} key={key} modifierClass='locked'/>);
+            } else if(i <= current_date) {
+                squares.push(<CalendarSquare date={i} day={i % 7 + offset} key={key} {...default_square}/>); 
             } else {
-                squares.push(<CalendarSquare date={i} day={i % 7 + offset} key={key} handleSubmit={this.handleSubmit}/>); 
+                squares.push(<CalendarSquare date={i} day={i % 7 + offset} key={key} handleSubmit={this.handleSubmit}/>);
             }
 
 
@@ -65,7 +67,7 @@ class CalendarGrid extends Component {
         const events = this.props.events;
         return (
             <div className='calendar'>
-                {this.generateCalendar(31, 5, events)}
+                {this.generateCalendar(31, 5, 7, events)}
             </div>
         )
     }

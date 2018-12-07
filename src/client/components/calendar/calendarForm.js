@@ -9,10 +9,10 @@ class CalendarForm extends Component {
 
         return (
             <form onSubmit={handleSubmit} className='calendar-form'>
-                <h1>Log In to Continue...</h1>
+                <h1>Enter Prefered Time</h1>
                 <Field
                     className='calendar-form_time'
-                    placeholder='Enter Email'
+                    placeholder='Enter TIme'
                     name='time'
                     type='time'
                     title='Time'

@@ -11,7 +11,11 @@ class CalendarPage extends Component
             <div>
                 <Header/>
                 <div className='headerSpacer'></div>
-                <CalendarGrid/>
+                <div className='calendar-wrapper'>
+                    <h1>Meeting Schedular</h1>
+                    <h1 className='calendar-header'>December</h1>
+                    <CalendarGrid/>
+                </div>
                 <Footer/>
             </div>
         )

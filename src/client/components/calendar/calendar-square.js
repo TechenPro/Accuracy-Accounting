@@ -34,7 +34,7 @@ class CalendarSquare extends Component {
         return (
             <div className={`${modifierClass ? `calendar-square_${modifierClass}` : 'calendar-square'} calendar-square-${day} `} id={modifierClass ? '' : `square-${date}`}>
                 
-                <a className='calendar-square_body' onClick={this.togglePopup.bind(this)}>
+                <a className='calendar-square_body' onClick={modifierClass ? '' : this.togglePopup.bind(this)}>
                     <label className='date'>{date}</label>
                     <label className='title'>{title ? title : "Open"}</label>
                     {title ? <label className='time'>{time}</label> : ""}
