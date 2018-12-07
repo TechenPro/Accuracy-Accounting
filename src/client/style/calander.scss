@@ -2,18 +2,24 @@
     height: 80vh;
     width: 80vw;
     justify-self: center;
-    background-color: cornflowerblue;
+    background-color: black;
 
     display: grid;
+    grid-gap: 1px;
+    grid: 1px solid black;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 
 .calander-square {
     height: 100%;
     width: 100%;
-    background-color: red;
+    justify-self: center;
+    background-color: $tealColor;
 
     display: grid;
 
@@ -21,12 +27,25 @@
         grid-area: 1 / 1;
         height: 100%;
         width: 100%;
-        // background-color: black;
         position: relative;
 
-        &:hover {
-            box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.75);
+        label {
+            color:blueviolet;
         }
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        background-color: $offSilverColor;
+        z-index: 10;
+    }
+}
+
+.calander-square_locked {
+    background-color: $offTealColor;
+    &:hover {
+        
     }
 }
 

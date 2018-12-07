@@ -8,7 +8,7 @@ function tokenForUser(user) {
 
 exports.findOne = (path, matchParam, value) => {
     const json_data = fileOp.readData(path);
-    const arr = Object.keys(json_data).map((key) => json_data[key]);
+    const arr = fileOp.jsonToArray(json_data);
 
     const found = arr.find((element) => {
         return element[matchParam] == value;

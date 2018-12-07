@@ -8,14 +8,20 @@ const bodyParser = require('body-parser');
 const useBodyParser = bodyParser.json({ type: '*/*'});
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 
 app.use(express.static(path.join(__dirname, '/dist/')));
 
-app.post("/api/getUsername", useBodyParser, (req, res) => {
-  const user = authOp.findOne(path.join(__dirname + '/dist/data/clients.json'), 'username', 'Gilgamesh');
+app.post("/api/signin", useBodyParser, (req, res) => {
+  const user = authOp.findOne(path.join(__dirname + '/dist/data/clients.json'), 'username', req.body.username);
   user ? authOp.authenticate(res, user, req.body.password) : res.status(422).send({ error: 'Inccorect Username or Password'})
+});
+
+app.get("/api/getSchedule", (req, res) => {
+  const json_data = fileOp.readData(path.join(__dirname + '/dist/data/calander.json'));
+  const schedule = fileOp.jsonToArray(json_data);
+  res.send(schedule);
 });
 
 // app.post("/api/storeUsername", useBodyParser, (req, res) => {
