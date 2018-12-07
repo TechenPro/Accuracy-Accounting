@@ -12,7 +12,10 @@ export default class Page404 extends Component {
                         <div className='footer-txt-sub-left'>
                             Phone: 1(800)-867-5309<br></br>
                             Email: accuracy@mailinator.com<br></br>
-                            Twitter: @Accuracy
+                            Find us on social media: 
+                            <a href='https://www.twitter.com/login'><i class="fab fa-twitter"></i></a> 
+                            <a href='https://www.facebook.com/login'><i class="fab fa-facebook"></i></a>
+                            <a href='https://www.linkedin.com/login'><i class="fab fa-linkedin"></i></a>
                         </div>
                         <div className='footer-txt-sub-right'>
                             Fax: 1(800)-867-3101 <br></br>

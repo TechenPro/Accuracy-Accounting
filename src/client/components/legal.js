@@ -12,7 +12,7 @@ export default class legal extends Component {
 
                 <div className='legal'>
                     <div className='heading'>
-                        Legal and Copy right Information
+                        Legal and Copyright Information
                     </div>
 
                     <div className='legal-info'>

@@ -75,11 +75,11 @@ export default class homePage extends Component {
                     url= 'https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Not-for-Profit'
-                        description= 'Accounting Accuracy is interested in making its community better, which is why it supports non-profit businesses. We work for every type of non-profit businesses including museums, schools and more.'
+                        description= 'Accuracy is interested in making its community better, which is why it supports non-profit businesses. We work for every type of non-profit businesses including museums, schools and more.'
                     url= 'https://images.pexels.com/photos/1498963/pexels-photo-1498963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Professional Services'
-                        description= 'Accounting Accuracy provides aid to all business, big or small. Our experienced team has the knowledge to help you in any industry regardless of the service you provide. '
+                        description= 'Accuracy provides aid to all business, big or small. Our experienced team has the knowledge to help you in any industry regardless of the service you provide. '
                     url= 'https://images.pexels.com/photos/1345085/pexels-photo-1345085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
                     link = '#' / >
                     < IndustryCard title = 'Energy'
