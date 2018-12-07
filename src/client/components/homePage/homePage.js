@@ -37,7 +37,7 @@ export default class homePage extends Component {
                         <div className='services'>
                             <h1>TAXES</h1>
                             <ImageLink
-                                imageurl='https://bfba.com/wp-content/uploads/2017/10/bfba_Tax-Icon-Blue.png'
+                            imageurl = 'http://res.publicdomainfiles.com/pdf_view/2/13489785619129.png'
                                 linkUrl='/'
                             />
                         </div>
@@ -45,7 +45,7 @@ export default class homePage extends Component {
                         <div className='services'>
                             <h1>ASSURANCE</h1>
                             <ImageLink
-                                imageurl='https://bfba.com/wp-content/uploads/2017/10/bfba_Assuance-Icon-Blue.png'
+                            imageurl = 'https://png2.kisspng.com/20180612/pi/kisspng-bitmap-clip-art-growth-icon-5b20176f386380.203413681528829807231.png'
                                 linkUrl='/'
                             />
                         </div>
@@ -53,7 +53,7 @@ export default class homePage extends Component {
                         <div className='services'>
                             <h1>ADVISORY</h1>
                             <ImageLink
-                                imageurl='https://bfba.com/wp-content/uploads/2017/10/bfba_Advisory-Icon-Blue.png'
+                            imageurl='http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.med.png'
                                 linkUrl='/'
                             />
                         </div>
@@ -120,16 +120,17 @@ export default class homePage extends Component {
                 <div className='insight-title'>Insights</div>
                 < div className = 'insight' >
                     <div className = 'insight-quote' >
-                    "They helped my sue my ex-wife! And I won, too!" </div> 
+                    "Accuracy has provided accounting services for my business for the past couple of years. The customer service has been exceptional. I have and will continue to recommend the company's services to my fellow business owners." 
+                    </div>
                     <div className = 'insight-reference' >
-                    -Harry S. Truman 
+                    -Bobby Littleridge
                     </div> 
                 </div>
                 <div className = 'insight' >
                     <div className = 'insight-quote' >
-                    "They helped my ex-husband sue me! And I lost!" </div> 
+                    "I needed quick, comprehensive, and thorough assistance figuring out how to do taxes for a business, all of which Accuracy provided at a highly reasonable cost." </div> 
                     <div className = 'insight-reference' >
-                    -Harry S. Truman's Lesser Known Ex-Wife, Martha </div> 
+                    -Henrietta Tubman </div> 
                 </div>
             </div>, 
            <Footer />
