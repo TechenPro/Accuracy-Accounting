@@ -7,7 +7,7 @@ import {
 
 export function signIn(fields, success) {
     return function(dispatch) {
-        axios.post('/api/getUsername', fields)
+        axios.post('/api/signin', fields)
             .then(response => {
                 dispatch({
                     type: AUTHENTICATE_USER,

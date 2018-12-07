@@ -3,10 +3,12 @@ import {
 } from './auth';
 
 import {
-  fetchSchedule
+  fetchSchedule,
+  newScheduleEvent
 } from './events';
 
 export {
   signIn,
-  fetchSchedule
+  fetchSchedule,
+  newScheduleEvent
 };

@@ -16,3 +16,17 @@ export function fetchSchedule() {
             .catch(err => {console.log(err)})
     }
 }
+
+export function newScheduleEvent(fields, success) {
+    return function(dispatch) {
+        axios.post('/api/newEvent', fields)
+            .then(response => {
+                dispatch({
+                    type: FETCH_SCHEDULE,
+                    payload: response.data
+                })
+                success();
+            })
+            .catch(err => {console.log(err)})
+    }
+}

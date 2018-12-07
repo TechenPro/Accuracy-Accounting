@@ -29,9 +29,9 @@ class CalanderGrid extends Component {
 
         for(i=1; i <= days; i++) {
             if(dateList.includes(i)){
-                squares.push(<CalanderSquare {...eventList[i]} key={key}/>);
+                squares.push(<CalanderSquare {...eventList[i]} key={key} handleSubmit={this.handleSubmit}/>);
             } else {
-                squares.push(<CalanderSquare date={i} day={i % 7 + offset} key={key}/>); 
+                squares.push(<CalanderSquare date={i} day={i % 7 + offset} key={key} handleSubmit={this.handleSubmit}/>); 
             }
 
 
@@ -73,8 +73,8 @@ class CalanderGrid extends Component {
 
 function mapStateToProps(state) {
     const events = state.events;
-    console.log('Mapping, Mapping');
-    console.log(events);
+    // console.log('Mapping, Mapping');
+    // console.log(events);
     return events;
 }
 

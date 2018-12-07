@@ -18,6 +18,17 @@ app.post("/api/signin", useBodyParser, (req, res) => {
   user ? authOp.authenticate(res, user, req.body.password) : res.status(422).send({ error: 'Inccorect Username or Password'})
 });
 
+app.post("/api/newEvent", useBodyParser, (req, res) => {
+  let events = fileOp.jsonToArray(fileOp.readData(path.join(__dirname + '/dist/data/calander.json')));
+  events.push(req.body);
+  let events_json = {};
+  events.forEach(event => {
+    events_json[events.indexOf(event)] = event;
+  });
+  fileOp.writeData(path.join(__dirname + '/dist/data/calander.json'), events_json);
+  res.send(events);
+})
+
 app.get("/api/getSchedule", (req, res) => {
   const json_data = fileOp.readData(path.join(__dirname + '/dist/data/calander.json'));
   const schedule = fileOp.jsonToArray(json_data);

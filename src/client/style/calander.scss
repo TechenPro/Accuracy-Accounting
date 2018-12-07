@@ -2,16 +2,15 @@
     height: 80vh;
     width: 80vw;
     justify-self: center;
-    background-color: black;
+    background-color: $silverColor;
 
     display: grid;
     grid-gap: 1px;
-    grid: 1px solid black;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid $silverColor;
 }
 
 
@@ -30,7 +29,7 @@
         position: relative;
 
         label {
-            color:blueviolet;
+            color:white;
         }
     }
 
@@ -39,14 +38,27 @@
         border-radius: 5px;
         background-color: $offSilverColor;
         z-index: 10;
+
+        .calander-square_body label {
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0, .5);
+        z-index: 10;
     }
 }
 
 .calander-square_locked {
     background-color: $offTealColor;
-    &:hover {
-        
-    }
 }
 
 @for $i from 1 to 7 {

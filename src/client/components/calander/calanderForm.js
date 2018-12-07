@@ -5,7 +5,7 @@ import { FormInput, FormButton } from '../common/formFields';
 
 class CalanderForm extends Component {
     render() {
-        const {handleCancel} = this.props;
+        const {handleSubmit, handleCancel} = this.props;
 
         return (
             <form onSubmit={handleSubmit} className='calander-form'>
