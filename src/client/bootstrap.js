@@ -28,6 +28,9 @@ import about from './components/aboutPage';
 import industries from './components/industriesPage';
 import services from './components/services';
 import Calander from './components/calander/calander';
+import legal from './components/legal'
+import contact from './components/contact';
+import insights from './components/insights';
 
 
 function main() {
@@ -46,6 +49,9 @@ function main() {
             <Route path='/about' component={about}/>
             <Route path='/industries' component={industries}/>
             <Route path='/services' component={services}/>
+            <Route path='/legal' component={legal} />
+            <Route path='/contact' component={contact} />
+            <Route path='/insights' component={insights} />
             {/* Catches All Invalid Links */}
             <Route component={Page404}/>
 
