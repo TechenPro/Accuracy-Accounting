@@ -16,11 +16,10 @@ import './style/main.scss';
 import history from './history';
 
 // Imported Functions
-import {RequireAuth} from './functions/authFunctions';
+import requireAuth from './functions/authFunctions';
 
 // Imported Components
 import Layout from './components/layout';
-import App from './components/app';
 import Page404 from './components/404';
 import Login from './components/auth/login';
 import homePage from './components/homePage/homePage';
@@ -43,10 +42,10 @@ function main() {
           { /* Only allows one path to be rendered at any time */ }
           <Switch>
 
-            <Route path='/' exact component={Calendar}/>
+            <Route path='/' exact component={homePage}/>
             <Route path='/login' component={Login}/>
-            <RequireAuth path='/protected' component={App} authenticated={true}/>
-            <Route path='/homePage' component={homePage}/>
+            <Route path='/client-schedular' component={requireAuth(Calander)}/>
+            <Route path='/home' component={homePage}/>
             <Route path='/about' component={about}/>
             <Route path='/industries' component={industries}/>
             <Route path='/services' component={services}/>

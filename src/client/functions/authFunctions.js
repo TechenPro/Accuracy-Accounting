@@ -1,28 +1,30 @@
-// Neccessary React Imports
-import React from 'react';
-import { Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export function RequireAuth({ component: Component, authenticated: Auth, ...rest }) {
-  return(
+import history from '../history';
 
-    <Route
+export default function(ComposedComponent) {
 
-      {...rest}
+    class Authentication extends Component {
+        componentWillMount() {
+            if(!this.props.authenticated) {
+                history.push('/login');
+            }
+        }
+        componentWillUpdate(nextProps) {
+            if(!nextProps.authenticated) {
+                history.push('/login');
+            }
+        }
+        render() {
+            return <ComposedComponent {...this.props}/>
+        }
+    }
 
-      render={ props =>
-        Auth ? (
-          <Component {...props} />
-        ) : (
-          <Redirect
-            to={{
-              pathname: '/',
-              state: {from: props.location}
-            }}
-          />
-        )
+    function mapStateToProps(state) {
+        const { authenticated } = state.auth;
+        return { authenticated }
+    }
 
-      }
-    />
-
-  );
+    return connect(mapStateToProps)(Authentication)
 }

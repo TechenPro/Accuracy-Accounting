@@ -13,10 +13,10 @@ class LoginForm extends Component {
                 <div className="login-form_inner">
                     <Field
                         className='login-form_inner_email'
-                        placeholder='Enter Email'
-                        name='name'
-                        type='name'
-                        title='Name'
+                        placeholder='Enter Username'
+                        name='username'
+                        type='username'
+                        title='Username'
                         component={FormInput}
                     />
                     <Field
