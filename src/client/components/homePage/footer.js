@@ -13,9 +13,9 @@ export default class Page404 extends Component {
                             Phone: 1(800)-867-5309<br></br>
                             Email: accuracy@mailinator.com<br></br>
                             Find us on social media:  
-                            <a href='https://www.twitter.com/login'> <img className='footer-media-logo' src='http://pngimg.com/uploads/twitter/twitter_PNG34.png'></img></a>
-                            <a href='https://www.facebook.com/login'><img className='footer-media-logo' src='https://facebookbrand.com/wp-content/themes/fb-branding/assets/images/fb-logo.png'></img></a>
-                            <a href='https://www.linkedin.com'><img className='footer-media-logo' src='http://ericksonestatesla.com/wp-content/uploads/2018/05/linkedin-logo-copy.png'></img></a>
+                            <a href='https://www.twitter.com/login'> <img className='footer-media-logo' src='./assets/footer-twitter.png'></img></a>
+                            <a href='https://www.facebook.com/login'><img className='footer-media-logo' src='./assets/footer-facebook.png'></img></a>
+                            <a href='https://www.linkedin.com'><img className='footer-media-logo' src='./assets/footer-linkedin.png'></img></a>
                         </div>
                         <div className='footer-txt-sub-right'>
                             Fax: 1(800)-867-3101 <br></br>

@@ -12,7 +12,7 @@ export default class about extends Component {
             <div className='about-page'>
                 <div className='about-page-image'>
                     <ImageLink
-                        imageurl='https://careersbuildingcommunities.org/wp-content/uploads/2018/01/squarePhoto_960x960_workers19_naa.jpg'
+                        imageurl='./assets/about.png'
                         />
                 </div>
 

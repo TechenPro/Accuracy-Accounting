@@ -11,7 +11,7 @@ export default class header extends Component {
                 </div>
 
                 <a className='header-center-logo' href="/">
-                    < img src = 'https://png2.kisspng.com/20180630/xxv/kisspng-shooting-target-target-corporation-clip-art-5b37f24f07bd91.8874108015303931670317.png'></img>
+                    < img src = './assets/header-logo.png'></img>
                 </a>
 
                 < div className='header-btn-holder-right' >

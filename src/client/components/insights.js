@@ -13,7 +13,7 @@ export default class insights extends Component {
 
                 <div className='insights-img'>
                     <ImageLink
-                        imageurl='https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                        imageurl='./assets/insights.png'
                     />
                 </div>
 

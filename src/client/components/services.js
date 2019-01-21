@@ -12,7 +12,7 @@ export default class Page404 extends Component {
 
                 <div className='services-image'>
                     <ImageLink
-                        imageurl='https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                        imageurl='./assets/services-top.png'
                     />
                 </div>
 
@@ -126,7 +126,7 @@ export default class Page404 extends Component {
 
                     <div className='services-image2'>
                     <ImageLink
-                        imageurl='https://images.pexels.com/photos/908288/pexels-photo-908288.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+                        imageurl='./assets/services-bottom.png'
                         />
                     </div>
 
