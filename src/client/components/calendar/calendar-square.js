@@ -30,14 +30,13 @@ class CalendarSquare extends Component {
     }
 
     render() {
-        const {date, day, modifierClass, title, time} = this.props;
+        const {date, modifierClass, title} = this.props;
         return (
-            <div className={`${modifierClass ? `calendar-square_${modifierClass}` : 'calendar-square'} calendar-square-${day} `} id={modifierClass ? '' : `square-${date}`}>
+            <div className={`${modifierClass ? `calendar-square_${modifierClass}` : 'calendar-square'} calendar-square-${date.getDay()} `} id={modifierClass ? '' : `square-${date.getDate()}`}>
                 
-                <a className='calendar-square_body' onClick={modifierClass ? '' : this.togglePopup.bind(this)}>
-                    <label className='date'>{date}</label>
+                <a className='calendar-square_body' onClick={modifierClass ? null : this.togglePopup.bind(this)}>
+                    <label className='date'>{date.getDate()}</label>
                     <label className='title'>{title ? title : "Open"}</label>
-                    {title ? <label className='time'>{time}</label> : ""}
                 </a>
                 { this.state.showPopup ?
                 <div className='popup'>
@@ -52,9 +51,6 @@ class CalendarSquare extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    const {user} = state.auth;
-    return {user};
-}
 
-export default connect(mapStateToProps, actions)(CalendarSquare);
+
+export default connect(null, actions)(CalendarSquare);

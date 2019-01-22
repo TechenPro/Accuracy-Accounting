@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
 import CalendarSquare from './calendar-square';
+import { PassThrough } from 'stream';
 
 class CalendarGrid extends Component {
 
@@ -11,39 +12,47 @@ class CalendarGrid extends Component {
         this.props.fetchSchedule();
     }
 
+    // componentDidMount(){
+    //     this.switchMonths(1);
+    // }
 
-    generateCalendar = (days, offset, current_date, events) => {
-        let default_square = {title:'Locked', modifierClass:'locked'};
+
+    generateCalendar = (today, firstOfMonth, events) => {
+        const default_square = {title:' ', modifierClass:'locked'};
         let squares = [];
-        let i;
-        let key = 0;
-        let runningOffset;
+
         const {eventList, dateList} = this.parseEventDates(events);
 
-        if(offset) {
-            for(i=1; i <= offset; i++) {
-                squares.push(<CalendarSquare date={(30-offset) + i} day={i} {...default_square} key={key}/>)
+        const offset = firstOfMonth.getDay();
+
+        //Loop Controllers
+        let i;
+        let key = 0;
+
+        if(offset){
+            for(i=offset; i>0; --i){
+                let squareDate = new Date(firstOfMonth);
+                squareDate.setDate(squareDate.getDate() - i);
+                squares.push(<CalendarSquare date={squareDate} {...default_square} key={key}/>)
                 key++;
             }
-        };
-
-        for(i=1; i <= days; i++) {
-            if(dateList.includes(i)){
-                squares.push(<CalendarSquare {...eventList[i]} key={key} modifierClass='locked'/>);
-            } else if(i <= current_date) {
-                squares.push(<CalendarSquare date={i} day={i % 7 + offset} key={key} {...default_square}/>); 
-            } else {
-                squares.push(<CalendarSquare date={i} day={i % 7 + offset} key={key} handleSubmit={this.handleSubmit}/>);
-            }
-
-
-            runningOffset = i % 7 + offset;
-            key++;
         }
 
-        i = 1;
-        while(squares.length < 42) {
-            squares.push(<CalendarSquare date={i} day={i % 7 + runningOffset} {...default_square} key={key}/>);
+        i = 0;
+        while(squares.length < 42){
+            let squareDate = new Date(firstOfMonth);
+            squareDate.setDate(squareDate.getDate() + i);
+
+            if(squareDate <= today){
+                squares.push(<CalendarSquare date={squareDate} {...default_square} key={key}/>)
+            }
+            else if(squareDate in dateList){
+                squares.push(<CalendarSquare date={squareDate} {...default_square} key={key}/>)
+            }
+            else{
+                squares.push(<CalendarSquare date={squareDate} key={key} handleSubmit={this.handleSubmit}/>)
+            }
+
             i++;
             key++;
         }
@@ -51,23 +60,31 @@ class CalendarGrid extends Component {
         return squares;
     }
 
+    
+
     parseEventDates = (events) => {
         let eventList = {};
         let dateList = [];
-
-        events.forEach(ev => {
-            eventList[ev.date] = ev;
-            dateList.push(ev.date)
-        })
+        
+        // if(events){
+        //     events.forEach(ev => {
+        //         evDate = new Date(ev.date);
+        //         eventList[evDate.getDate()] = evDate;
+        //         dateList.push(evDate.getDate())
+        //     })
+        // }
+        // console.log(events);
 
         return {eventList, dateList};
     }
 
     render() {
+        const {today, firstOfMonth} = this.props;
         const events = this.props.events;
+        console.log(firstOfMonth);
         return (
             <div className='calendar'>
-                {this.generateCalendar(31, 5, 7, events)}
+                {this.generateCalendar(today, firstOfMonth, events)}
             </div>
         )
     }

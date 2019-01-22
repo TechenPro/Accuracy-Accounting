@@ -41,8 +41,8 @@ body {
 
 .layout-grid {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: [header-s] minmax(50px, 75px) [header-e content-s] 1fr [content-e footer-s] 250px [footer-e];
     min-height: 100vh;
-    justify-content: space-between;
+    justify-items: center;
 }

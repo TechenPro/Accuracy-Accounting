@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 
 import ImageLink from './imageLink';
-import Header from './header';
 import IndustryCard from './industryCard';
-import Footer from './footer';
 
 
 export default class homePage extends Component {
     render() {
-        return [
-            <Header/>,
-            <div className='headerSpacer'></div>,
-            <div className='city'>
-                <div className='city-text'>
-                    < div className = 'city-text-main' >
-                    Accuracy
-                    </div>
+        return( 
+            <div className="homepage-wrapper">
+                <div className='city'>
+                    <div className='city-text'>
+                        < div className = 'city-text-main' >
+                        Accuracy
+                        </div>
 
                     < div className = 'city-text-sub' >
                         Accounting < div className='city-text-sub-img' ><img src= './assets/header-logo.png' ></img></div> n - Point.
@@ -26,12 +23,12 @@ export default class homePage extends Component {
                     imageurl= './assets/homepage-animation.gif'
                 /> 
             
-            </div>,           
+            </div>
 
-            <div className ='servicesHolder'>
-                <div className='title-services'>
-                    Services
-                </div>
+                <div className ='servicesHolder'>
+                    <div className='title-services'>
+                        Services
+                    </div>
 
                 <div className='services-columns'>
                         <div className='services'>
@@ -60,10 +57,10 @@ export default class homePage extends Component {
                 </div>
             </div>,
 
-            <div className='industriesHolder'>
-                <div className='title-industries'>
-                    Industries
-                </div>
+                <div className='industriesHolder'>
+                    <div className='title-industries'>
+                        Industries
+                    </div>
 
                 <div className='industries-cards'>
                     < IndustryCard title = 'Construction'
@@ -122,19 +119,10 @@ export default class homePage extends Component {
                     <div className = 'insight-quote' >
                     "Accuracy has provided accounting services for my business for the past couple of years. The customer service has been exceptional. I have and will continue to recommend the company's services to my fellow business owners." 
                     </div>
-                    <div className = 'insight-reference' >
-                    -Bobby Littleridge
-                    </div> 
                 </div>
-                <div className = 'insight' >
-                    <div className = 'insight-quote' >
-                    "I needed quick, comprehensive, and thorough assistance figuring out how to do taxes for a business, all of which Accuracy provided at a highly reasonable cost." </div> 
-                    <div className = 'insight-reference' >
-                    -Henrietta Tubman </div> 
-                </div>
-            </div>, 
-           <Footer />
-        ]
+            </div>
+            </div>
+    )
     }
 }
 

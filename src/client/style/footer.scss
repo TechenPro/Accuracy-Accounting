@@ -1,7 +1,9 @@
 .footer {
+    grid-row: footer-s/footer-e;
     margin-top: 10px;
     height: 250px;
     width: 100%;
+    align-self: flex-start;
     background-color: grey;
     display: grid;
     grid-template-rows: 6fr 1fr;
