@@ -6,8 +6,7 @@ import ImageLink from './homePage/imageLink';
 
 export default class contact extends Component {
     render() {
-        return [
-             <Header />, <div className='headerSpacer'></div>,
+        return (
              <div className='contact'>
                 <div className='contact-title'>Accuracy<hr></hr></div>
                 <div className='contact-txt'>
@@ -27,7 +26,7 @@ export default class contact extends Component {
                         Tooele, Ut 84074
                     </div>
                     </div>
-                </div>,
+                </div>
 //             <head>
 //                 <meta charset='utf-8' />
 //                 <title>Display a map</title>
@@ -53,7 +52,6 @@ export default class contact extends Component {
 // </script>
 //             </div>,
 
-            <Footer />
-        ]
+        )
     }
 }

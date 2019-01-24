@@ -6,8 +6,7 @@ import ImageLink from './homePage/imageLink';
 
 export default class Page404 extends Component {
     render() {
-        return[
-            <Header />, <div className='headerSpacer'></div>,
+        return(
             <div className='services-page'>
 
                 <div className='services-image'>
@@ -174,8 +173,7 @@ export default class Page404 extends Component {
                     We have worked with several businesses and have gained the experience needed to aid our clients in creating a succession plan to ensure smooth transitions.
                 </div>
 
-            </div>,
-            <Footer />
-        ]
+            </div>
+        )
     }
 }

@@ -23,7 +23,7 @@ export default class Page404 extends Component {
                             Tooele, Ut 84074
                         </div>
                     </div>
-
+ 
                 </div>
 
                 <div className='footer-txt'>

@@ -5,10 +5,8 @@ import Footer from './homePage/footer';
 import ImageLink from './homePage/imageLink';
 
 export default class insights extends Component {
-    render() {
-        return [
-            <Header />, <div className='headerSpacer'></div>,
-
+    render() { 
+        return (
             <div className='insights'>
 
                 <div className='insights-img'>
@@ -83,9 +81,7 @@ export default class insights extends Component {
 
 
 
-            </div>,
-
-            <Footer />
-        ]
+            </div>
+        )
     }
 }

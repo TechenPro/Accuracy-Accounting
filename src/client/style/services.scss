@@ -1,5 +1,7 @@
 .services-page {
-    margin: 5rem;
+    grid-row: content-s/content-e;
+    display: block;
+    padding: 50px;
 }
 
 .services-image img {
@@ -16,4 +18,4 @@
     height: 35rem;
     padding-top: 16rem;
     padding-left: 1rem;
-}
+} 

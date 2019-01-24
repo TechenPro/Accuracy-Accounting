@@ -6,8 +6,7 @@ import ImageLink from './homePage/imageLink';
 
 export default class about extends Component {
     render() {
-        return [
-            <Header />,
+        return (
 
             <div className='about-page'>
                 <div className='about-page-image'>
@@ -42,9 +41,7 @@ export default class about extends Component {
                     We want to keep the same values we had when we opened over 20 years ago while still striving to become the best we posibily can be. It is our clients that keep us in business, and we aren't afraid of changing to create a better experience for you, so we are always open to suggestions.
                     
                 </div>
-            </div>,
-
-            <Footer />
-        ]
+            </div>
+        )
     }
 }
