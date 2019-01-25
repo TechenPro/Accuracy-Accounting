@@ -15,11 +15,11 @@ export default class insights extends Component {
                     />
                 </div>
 
-                <div className='heading'>
+                <div className='insights-heading'>
                     FAQ
                 </div>
 
-                    <div className='subheading'>
+                    <div className='insights-subheading'>
                         How much do you charge for your services?
                     </div>
 
@@ -28,7 +28,7 @@ export default class insights extends Component {
                         <a className='insights-link' href='/contact'> here</a>.
                     </div>
 
-                    <div className='subheading'>
+                    <div className='insights-subheading'>
                         Can small businesses you your services?
                     </div>
 
@@ -36,7 +36,7 @@ export default class insights extends Component {
                         All companies can use our services regardless of its size. We also help individuals with the same services. We help all companies no matter what industry they are in.
                     </div>
 
-                    <div className='subheading'>
+                    <div className='insights-subheading'>
                         How do I set up a meeting?
                     </div>
 
@@ -47,7 +47,7 @@ export default class insights extends Component {
                         <a className='insights-link' href='/contact'> here</a>.
                     </div>
 
-                <div className='heading'>
+                <div className='insights-heading-testimonials'>
                     Testimonials
                 </div>
 

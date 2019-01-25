@@ -15,10 +15,10 @@
 
 .faq-answers {
     position: relative;
-    margin: 5rem;
+    margin: 1rem;
     margin-top: 1rem;
     font-size: 1.5rem;
-    top: 4rem;
+    //top: 4rem;
 }
 
 .testimonials {
@@ -42,6 +42,26 @@
     position: relative;
     height: 30rem;
     float: right;
-    padding-top: 10rem;
-    padding-left: 1rem;
+    //padding-top: 10rem;
+    padding-left: 1.5rem;
+}
+
+.insights-heading {
+    color: $offTealColor;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.insights-subheading {
+    color: $offTealColor;
+    font-size: 2rem;
+    //padding-top: 20px;
+}
+
+.insights-heading-testimonials {
+    color: $offTealColor;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
 }
