@@ -10,7 +10,7 @@
 .about-page-image img {
     position: relative;
     margin-left: 10px;
-    height: 50rem;
+    width: 40%;
     float: right;
 }
 
@@ -24,4 +24,42 @@
 .about-page-body {
     color: black;
     font-size: 1.6rem;
+}
+
+
+@media(max-width: 50em) {
+
+        .about-page {
+        grid-row: content-s/content-e;
+        display: block;
+        padding: 10px;
+        padding-top: 0px;
+        
+    }
+
+
+
+    .about-page-image img {
+        position: relative;
+        margin-left: 0px;
+        width: 110%;
+        float: left;
+        padding-bottom: 5%;
+        overflow: hidden;
+        margin-top: -35%;
+        margin-left: -10%;
+    }
+
+    .about-page-subheading {
+    color: $offTealColor;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+    .about-page-body {
+        color: black;
+        font-size: 1.6rem;
+    }
+
 }
