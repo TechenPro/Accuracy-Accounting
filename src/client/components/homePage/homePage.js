@@ -119,6 +119,9 @@ export default class homePage extends Component {
                     <div className = 'insight-quote' >
                     "Accuracy has provided accounting services for my business for the past couple of years. The customer service has been exceptional. I have and will continue to recommend the company's services to my fellow business owners." 
                     </div>
+                    <div className = 'insight-reference'>
+                    - Harry S. Truman
+                    </div>
                 </div>
             </div>
             </div>

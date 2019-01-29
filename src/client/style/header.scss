@@ -1,6 +1,6 @@
 .header-btn-holder {
     grid-row: header-s/header-e;
-    height:10%;
+    height:100%;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -76,5 +76,13 @@
         background-color: $offTealColor;
         color: $offSilverColor;
         text-decoration: none;
+    }
+}
+
+@media(max-width: 50em)
+{
+    .header-btn
+    {
+        display: none;
     }
 }

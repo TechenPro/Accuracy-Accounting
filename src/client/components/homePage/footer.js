@@ -12,7 +12,7 @@ export default class Page404 extends Component {
                         <div className='footer-txt-sub-left'>
                             Phone: 1(800)-867-5309<br></br>
                             Email: accuracy@mailinator.com<br></br>
-                            Find us on social media:  
+                            Social media:  
                             <a href='https://www.twitter.com/login'> <img className='footer-media-logo' src='./assets/footer-twitter.png'></img></a>
                             <a href='https://www.facebook.com/login'><img className='footer-media-logo' src='./assets/footer-facebook.png'></img></a>
                             <a href='https://www.linkedin.com'><img className='footer-media-logo' src='./assets/footer-linkedin.png'></img></a>
@@ -26,7 +26,7 @@ export default class Page404 extends Component {
  
                 </div>
 
-                <div className='footer-txt'>
+                <div className='footer-txt footer-txt-second'>
                     <div className='footer-txt-title'>
                         Navigation<hr />
                     </div>

@@ -76,3 +76,38 @@
         }
     }
 }
+
+@media(max-width: 50em) {
+    .footer {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr 5fr 1fr;
+
+        &-legal {
+            width: 100vw;
+            grid-row: 3;
+        }
+    }
+
+    .footer-txt
+    {
+        width: 100vw;
+       
+        &-title
+        {
+            font-size: 2rem;
+            line-height: 3.5rem;
+        }
+
+        &-sub
+        {
+            font-size: 1rem;
+            line-height: 2.5rem;
+        }
+
+        &-second
+        {
+            grid-row: 2;
+        }
+    }
+}
