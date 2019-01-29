@@ -48,7 +48,7 @@
 
 .insights-heading {
     color: $offTealColor;
-    font-size: 30px;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -64,4 +64,80 @@
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+}
+
+
+@media(max-width: 50em) {
+
+    .insights {
+    grid-row: content-s/content-e;
+    display: block;
+    padding: 10px;
+    }
+
+    .insights-link {
+        color: rgb(0, 0, 228);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .faq-answers {
+        position: relative;
+        margin: 1rem;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        //top: 4rem;
+    }
+
+    .testimonials {
+        position: relative;
+        color: white;
+        font-size: 2rem;
+        top: 4rem;
+        column-count: 1;
+        margin: 7rem;
+        margin-top:0rem;
+        justify-items: center;
+    }
+
+    .testimonial-box {
+        //height: 15%;
+        
+        width: 50%;
+        padding: 3rem;
+        background-color: $tealColor;
+    }
+
+    .insights-img img{
+        position: relative;
+        float: left;
+        width: 100%;
+        height: auto;
+        //padding-top: 10rem;
+        margin-left: 0px;
+    }
+
+    .insights-heading {
+        color: $offTealColor;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .insights-subheading {
+        color: $offTealColor;
+        font-size: 2rem;
+        //padding-top: 20px;
+    }
+
+    .insights-heading-testimonials {
+        color: $offTealColor;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
 }

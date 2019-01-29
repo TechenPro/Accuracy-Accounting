@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
 
-import Header from './homePage/header';
-import Footer from './homePage/footer';
-import ImageLink from './homePage/imageLink';
-
 
 export default class legal extends Component {
     render() {
-        return [
-            <Header />, <div className='headerSpacer'></div>,
-
+        return (
                 <div className='legal'>
                     <div className='heading'>
                         Legal and Copyright Information
@@ -29,8 +23,7 @@ export default class legal extends Component {
                         The login animation was created by the user Dribbble on Pintrest and can be found < a href = 'https://www.pinterest.com/pin/98234835596258020/' className = 'legal-link'> here.</a>
                     </div>
 
-                </div>,
-            <Footer />
-        ]
+                </div>
+        )
     }
 }

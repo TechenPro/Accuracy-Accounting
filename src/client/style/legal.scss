@@ -1,5 +1,7 @@
 .legal {
-    margin: 50px;
+    grid-row: content-s/content-e;
+    display: block;
+    padding: 50px;
 }
 
 .legal-info {
@@ -14,4 +16,29 @@
     &:hover {
         text-decoration: none;
     }
+}
+
+@media(max-width: 50em) {
+
+    .legal {
+        grid-row: content-s/content-e;
+        display: block;
+        padding: 50px;
+        padding-top: 0px;
+    }
+
+    .legal-info {
+        margin: 0px;
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+
+    .legal-link {
+        color: blue;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
 }

@@ -7,7 +7,7 @@
 .services-image img {
     position: relative;
     float: right;
-    height: 30rem;
+    width: 35%;
     padding-top: 2rem;
     padding-left: 1rem;
 }
@@ -15,7 +15,37 @@
 .services-image2 img {
     position: relative;
     float: right;
-    height: 35rem;
+    width: 35%;
     padding-top: 16rem;
     padding-left: 1rem;
 } 
+
+@media(max-width: 50em) {
+
+    .services-page {
+    grid-row: content-s/content-e;
+    display: block;
+    padding: 10px;
+    padding-bottom: 30px;
+    }
+
+    .services-image img {
+        position: relative;
+        float: left;
+        width: 115%;
+        margin-left: -10%;
+        margin-top: -25%;
+    }
+
+    .services-image2 img {
+        position: relative;
+        float: left;
+        width: 35%;
+        padding-top: 16rem;
+        margin-left: -100%;
+    } 
+
+}
+
+// I didn't know what to do with the bottom image so I got rid of it
+// add it back if you want

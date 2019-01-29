@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Header from './homePage/header';
-import Footer from './homePage/footer';
 import ImageLink from './homePage/imageLink';
 
 export default class insights extends Component {
