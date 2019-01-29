@@ -120,15 +120,15 @@ export default class homePage extends Component {
                     "Accuracy has provided accounting services for my business for the past couple of years. The customer service has been exceptional. I have and will continue to recommend the company's services to my fellow business owners." 
                     </div>
                     <div className = 'insight-reference'>
-                    - Harry S. Truman
+                    - Wilfred Greningwich
                     </div>
                     </ div>
                     <div className = 'insight'>
                     <div className = 'insight-quote' >
-                    "Accuracy has provided accounting services for my business for the past couple of years. The customer service has been exceptional. I have and will continue to recommend the company's services to my fellow business owners." 
+                    "It is all thanks to Accuracy that my business is still afloat. They came with their outstanding team of highly capable accountants and got us out of the financial hole we had gotten ourselves into." 
                     </div>
                     <div className = 'insight-reference'>
-                    - Harry S. Truman
+                    - Janice Hilfred
                     </div>
                 </div>
             </div>
