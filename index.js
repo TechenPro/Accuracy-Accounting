@@ -4,6 +4,7 @@ const http = require('http');
 const path = require('path');
 const fileOp = require('./controllers/fileOperations');
 const authOp = require('./controllers/authFunctions');
+const mailer = require('./controllers/mailer');
 const bodyParser = require('body-parser');
 const useBodyParser = bodyParser.json({ type: '*/*'});
 
@@ -19,14 +20,20 @@ app.post("/api/signin", useBodyParser, (req, res) => {
 });
 
 app.post("/api/newEvent", useBodyParser, (req, res) => {
-  let events = fileOp.jsonToArray(fileOp.readData(path.join(__dirname + '/dist/data/calendar.json')));
-  events.push(req.body);
-  let events_json = {};
-  events.forEach(event => {
-    events_json[events.indexOf(event)] = event;
-  });
-  fileOp.writeData(path.join(__dirname + '/dist/data/calendar.json'), events_json);
-  res.send(events);
+  // let events = fileOp.jsonToArray(fileOp.readData(path.join(__dirname + '/dist/data/calendar.json')));
+  // events.push(req.body);
+  // let events_json = {};
+  // events.forEach(event => {
+  //   events_json[events.indexOf(event)] = event;
+  // });
+  // fileOp.writeData(path.join(__dirname + '/dist/data/calendar.json'), events_json);
+  // res.send(events);
+  const locals = {userName: "Mr. Clean"};
+  const messageInfo = {
+    email: "zant375.01@gmail.com", fromEmail: "Accuracy@A.com",
+    fromName: "Mr. Clean", subject: "Testing"
+  };
+  mailer.sendOne("test", messageInfo, locals);
 })
 
 app.get("/api/getSchedule", (req, res) => {
@@ -49,6 +56,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/dist/index.html'));
 });
 
-// Start the server on port 8080
+// Start the server
 const server = http.createServer(app);
 server.listen(port, () => console.log(`Listening on port ${port}!`));

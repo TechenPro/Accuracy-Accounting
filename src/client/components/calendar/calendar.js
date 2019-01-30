@@ -12,17 +12,11 @@ class CalendarGrid extends Component {
         this.props.fetchSchedule();
     }
 
-    // componentDidMount(){
-    //     this.switchMonths(1);
-    // }
-
-
     generateCalendar = (today, firstOfMonth, events) => {
         const default_square = {title:' ', modifierClass:'locked'};
         let squares = [];
 
         const {eventList, dateList} = this.parseEventDates(events);
-
         const offset = firstOfMonth.getDay();
 
         //Loop Controllers
@@ -33,7 +27,14 @@ class CalendarGrid extends Component {
             for(i=offset; i>0; --i){
                 let squareDate = new Date(firstOfMonth);
                 squareDate.setDate(squareDate.getDate() - i);
+                if(squareDate <= today){
                 squares.push(<CalendarSquare date={squareDate} {...default_square} key={key}/>)
+            }
+            else if (dateList.indexOf(`${squareDate.getDate()}/${squareDate.getMonth()}`) >= 0) {
+                squares.push(<CalendarSquare date={squareDate} title='Booked' client={eventList[`${squareDate.getDate()}/${squareDate.getMonth()}`].client} key={key} modifierClass='locked'/>)            }
+            else{
+                squares.push(<CalendarSquare date={squareDate} key={key} handleSubmit={this.handleSubmit}/>)
+            }
                 key++;
             }
         }
@@ -46,13 +47,12 @@ class CalendarGrid extends Component {
             if(squareDate <= today){
                 squares.push(<CalendarSquare date={squareDate} {...default_square} key={key}/>)
             }
-            else if(squareDate in dateList){
-                squares.push(<CalendarSquare date={squareDate} {...default_square} key={key}/>)
+            else if (dateList.indexOf(`${squareDate.getDate()}/${squareDate.getMonth()}`) >= 0) {
+                squares.push(<CalendarSquare date={squareDate} title='Booked' client={eventList[`${squareDate.getDate()}/${squareDate.getMonth()}`].client} key={key} modifierClass='locked'/>)
             }
             else{
                 squares.push(<CalendarSquare date={squareDate} key={key} handleSubmit={this.handleSubmit}/>)
             }
-
             i++;
             key++;
         }
@@ -60,20 +60,18 @@ class CalendarGrid extends Component {
         return squares;
     }
 
-    
-
     parseEventDates = (events) => {
         let eventList = {};
         let dateList = [];
+        console.log(events);
         
-        // if(events){
-        //     events.forEach(ev => {
-        //         evDate = new Date(ev.date);
-        //         eventList[evDate.getDate()] = evDate;
-        //         dateList.push(evDate.getDate())
-        //     })
-        // }
-        // console.log(events);
+        if(events){
+            events.forEach(ev => {
+                let evDate = new Date(ev.date);
+                dateList.push(`${evDate.getDate()}/${evDate.getMonth()}`);
+                eventList[`${evDate.getDate()}/${evDate.getMonth()}`] = ev;
+            })
+        }
 
         return {eventList, dateList};
     }
@@ -81,7 +79,6 @@ class CalendarGrid extends Component {
     render() {
         const {today, firstOfMonth} = this.props;
         const events = this.props.events;
-        console.log(firstOfMonth);
         return (
             <div className='calendar'>
                 {this.generateCalendar(today, firstOfMonth, events)}
@@ -92,8 +89,6 @@ class CalendarGrid extends Component {
 
 function mapStateToProps(state) {
     const events = state.events;
-    // console.log('Mapping, Mapping');
-    // console.log(events);
     return events;
 }
 

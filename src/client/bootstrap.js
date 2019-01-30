@@ -44,7 +44,7 @@ function main() {
 
             <Route path='/' exact component={homePage}/>
             <Route path='/login' component={Login}/>
-            <Route path='/client-schedular' component={requireAuth(Calendar)}/>
+            <Route path='/client-schedular' component={Calendar}/>
             <Route path='/home' component={homePage}/>
             <Route path='/about' component={about}/>
             <Route path='/industries' component={industries}/>

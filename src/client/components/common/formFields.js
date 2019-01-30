@@ -10,8 +10,30 @@ export class FormInput extends Component {
                     className='form-input_input'
                     type={type}
                     {...input}
+                    required
                     placeholder={placeholder}
                 />
+            </div>
+        )
+    }
+}
+
+export class FormSelector extends Component{
+    render(){
+        const {className, title, input, type, options} = this.props;
+        return(
+            <div 
+                className={`${className} form-selector`}
+                type={type}
+                {...input}
+            >
+                <label className='form-selector_title'>{title}</label>
+                <select className='form-selector_select' required>
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value='0'>{options[0]}</option>
+                    <option value='1'>{options[1]}</option>
+                    <option value='2'>{options[2]}</option>
+                </select>
             </div>
         )
     }

@@ -15,12 +15,15 @@ class CalendarSquare extends Component {
     }
 
     onSubmit = (fields) => {
-        fields["title"] = this.props.user.username;
-        fields["date"] = this.props.date;
+        const date = this.props.date;
+        const time = [12, 13, 14][fields['time']];
+        date.setHours(time);
+        fields["date"] = date.toString();
         this.props.newScheduleEvent(fields, () => {
             console.log("Scheduling Successful");
         })
         this.togglePopup();
+        // console.log(date);
     }
 
     togglePopup() {
@@ -30,18 +33,19 @@ class CalendarSquare extends Component {
     }
 
     render() {
-        const {date, modifierClass, title} = this.props;
+        const {date, modifierClass, title, client} = this.props;
         return (
             <div className={`${modifierClass ? `calendar-square_${modifierClass}` : 'calendar-square'} calendar-square-${date.getDay()} `} id={modifierClass ? '' : `square-${date.getDate()}`}>
                 
                 <a className='calendar-square_body' onClick={modifierClass ? null : this.togglePopup.bind(this)}>
                     <label className='date'>{date.getDate()}</label>
                     <label className='title'>{title ? title : "Open"}</label>
+                    <label className='client'>{client ? client : ''}</label>
                 </a>
                 { this.state.showPopup ?
                 <div className='popup'>
                     <div className='popup-inner'>
-                        <ScheduleForm onSubmit={(event) => this.onSubmit(event)} handleCancel={this.togglePopup.bind(this)} />
+                        <ScheduleForm onSubmit={(event) => this.onSubmit(event)} handleCancel={this.togglePopup.bind(this)} date={date.toLocaleDateString("en-US")}/>
                     </div>
                 </div>
                 : ''
