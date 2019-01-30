@@ -1,16 +1,18 @@
 .industries-page{
-    position: relative;
-    margin: 50px;
+    grid-row: content-s/content-e;
+    display: block;
+    padding: 50px;
+    //column-count: 2;
 }
 
 .industries-image img {
     position: relative;
-    height: 300px;
+    width: 40%;
     float: right;
     top: 50px;
 }
 
-.industries-bullets {
+.industries-bullets { 
     list-style-type: square;
     position: relative;
     color: black;

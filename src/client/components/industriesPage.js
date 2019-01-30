@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 
-import Header from './homePage/header';
-import Footer from './homePage/footer';
 import ImageLink from './homePage/imageLink';
 
 export default class industries extends Component {
     render() {
-        return [
-            <Header />,
+        return (
         
             <div className='industries-page'>
                 <div className='heading'>
@@ -21,7 +18,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-construction.png'
                     />
                 </div>
  
@@ -49,7 +46,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-realestate.png'
                     />
                 </div>
                 
@@ -74,7 +71,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-nonprofit.png'
                     />
                 </div>
 
@@ -99,7 +96,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-professionalservices.png'
                     />
                 </div>
 
@@ -124,7 +121,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-energy.png'
                     />
                 </div>
 
@@ -138,12 +135,12 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-transportation.png'
                     />
                 </div>
 
                 <div className='subheading'>
-                    Tansportation
+                    Transportation
                 </div>
 
                 <div className='body-text'>
@@ -154,7 +151,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-agriculture.png'
                     />
                 </div>
 
@@ -181,7 +178,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-propertymanagment.png'
                     />
                 </div>
 
@@ -195,7 +192,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-wholesale&distribution.png'
                     />
                 </div>
 
@@ -210,7 +207,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-manufacturing.png'
                     />
                 </div>
 
@@ -235,7 +232,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-communications.png'
                     />
                 </div>
 
@@ -260,7 +257,7 @@ export default class industries extends Component {
 
                 <div className='industries-image'>
                     <ImageLink
-                        imageurl='https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg'
+                        imageurl='./assets/industries-benefitplans.png'
                     />
                 </div>
 
@@ -271,9 +268,8 @@ export default class industries extends Component {
                 <div className='body-text'>
                     We have a dedicated team of auditors that understand the complex procedure of performing employee benefit pan audits. This team has the essential skills required to ensure the appropriate standards and regulation as made that could impact you employee’s benefit plan. Accuracy is devoted to achieving the best quality audit possible.
                 </div>
-            </div>,
+            </div>
 
-            <Footer />
-        ]
+        )
     }
 }
