@@ -16,7 +16,7 @@ export default class industries extends Component {
                     <br /><br /><br /><br />
                 </div>
  
-                <div className='subheading'>
+                <div className='subheading' id='construction'>
                     Construction
                 </div>
 
@@ -49,7 +49,7 @@ export default class industries extends Component {
 
                 
                 
-                <div className='subheading'>
+                <div className='subheading' id='realestate'>
                     Real Estate
                 </div>
 
@@ -79,7 +79,7 @@ export default class industries extends Component {
 
                 
 
-                <div className='subheading'>
+                <div className='subheading' id='nonprofit'>
                     Not-for-Profit
                 </div>
 
@@ -100,14 +100,14 @@ export default class industries extends Component {
                             <br /><br /><br /><br />
                         </div>
                     </div>
-                    <div className='industries-image'>
+                    <div className='industries-image' >
                         <ImageLink
                             imageurl='./assets/industries-nonprofit.png'
                         />
                     </div>
                 </div>
 
-                <div className='subheading'>
+                <div className='subheading' id='professionalservices'>
                     Professional Services
                 </div>
 
@@ -135,7 +135,7 @@ export default class industries extends Component {
                     </div>
                 </div>
 
-                <div className='subheading'>
+                <div className='subheading' id='energy'>
                     Energy
                 </div>
 
@@ -150,7 +150,7 @@ export default class industries extends Component {
                     </div>
                 </div>
 
-                <div className='subheading'>
+                <div className='subheading' id='transportation'>
                     Transportation
                 </div>
         
@@ -167,7 +167,7 @@ export default class industries extends Component {
                     </div>
                 </div>
 
-                <div className='subheading'>
+                <div className='subheading' id='agriculture'>
                     Agriculture
                 </div>
 
@@ -199,7 +199,7 @@ export default class industries extends Component {
 
                
 
-                <div className='subheading'>
+                <div className='subheading' id='propertymanagement'>
                     Property Management
                 </div>
 
@@ -216,7 +216,7 @@ export default class industries extends Component {
 
                 
 
-                <div className='subheading'>
+                <div className='subheading' id='wholesale&distribution'>
                     Wholesale & Distribution
                 </div>
 
@@ -234,7 +234,7 @@ export default class industries extends Component {
 
                 
 
-                <div className='subheading'>
+                <div className='subheading' id='manufacturing'>
                     Manufacturing
                 </div>
 
@@ -264,7 +264,7 @@ export default class industries extends Component {
 
                
 
-                <div className='subheading'>
+                <div className='subheading' id='communications'>
                     Communications
                 </div>
 
@@ -294,7 +294,7 @@ export default class industries extends Component {
 
                 
 
-                <div className='subheading'>
+                <div className='subheading' id='benefitplans'>
                     Benefit Plans
                 </div>
 

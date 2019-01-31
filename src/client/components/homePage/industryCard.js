@@ -7,20 +7,20 @@ export default class industryCard extends Component {
     render() {
         return [
 
-            <div className='industryCard'>
+            <a className='industryCard' href={this.props.linkUrl}>
                 <div className='card-description'>
                     {this.props.description}    
                 </div>
                 <div className='card-img'>
                     <ImageLink
                         imageurl = {this.props.url}
-                        // linkUrl={this.props.link}
+                       // linkUrl={this.props.link}
                     />
                 <div className='card-txt'>
                     {this.props.title}
                 </div>
                 </div>
-            </div>          
+            </a>          
 
         ]
     }
