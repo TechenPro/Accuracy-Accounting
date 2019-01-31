@@ -1,13 +1,13 @@
-var path = require("path");
-var templatesDir = path.resolve(__dirname, "templates");
-var Email = require("email-templates");
+// var path = require("path");
+// var templatesDir = path.resolve(__dirname, "templates");
+// var Email = require("email-templates");
 
 const mailjet = require("node-mailjet").connect(
-    process.env.MJ_APIKEY_PUBLIC,
-    process.env.MJ_APIKEY_PRIVATE
+    "public-key-here",
+    "secret-key-here"
 );
 
-const sendEmail = (messageInfo, text, html) => {
+exports.sendEmail = (messageInfo) => {
     return mailjet.post("send", {
         version: "v3.1"
     }).request({
@@ -20,29 +20,28 @@ const sendEmail = (messageInfo, text, html) => {
                 Email: messageInfo.email
             }],
             Subject: messageInfo.subject,
-            TextPart: text,
-            HTMLPart: html
+            TextPart: messageInfo.text,
         }]
     });
 
 };
 
-exports.sendOne = function (templateName, messageInfo, locals) {
-    const email = new Email({
-        views: {
-            root: templatesDir,
-            options: {
-                extension: "ejs"
-            }
-        }
-    });
+// exports.sendOne = function (templateName, messageInfo, locals) {
+//     const email = new Email({
+//         views: {
+//             root: templatesDir,
+//             options: {
+//                 extension: "ejs"
+//             }
+//         }
+//     });
 
-    return Promise.all([
-            email.render(`${templateName}/html`, locals),
-            email.render(`${templateName}/text`, locals)
-        ])
-        .then(([html, text]) => {
-            return sendEmail(messageInfo, text, html);
-        })
-        .catch(console.error);
-};
+//     return Promise.all([
+//             email.render(`${templateName}/html`, locals),
+//             email.render(`${templateName}/text`, locals)
+//         ])
+//         .then(([html, text]) => {
+//             return sendEmail(messageInfo, text, html);
+//         })
+//         .catch(console.error);
+// };
