@@ -19,7 +19,7 @@ class CalendarForm extends Component {
                     component={FormInput}
                 />
                 <Field
-                    className="sign-up-form__email"
+                    className="calendar-form_email"
                     placeholder="Enter Email"
                     name="email"
                     type="email"
@@ -35,7 +35,7 @@ class CalendarForm extends Component {
                     component={FormSelector}
                 />
                 <Field
-                    className="sign-up-form__email"
+                    className = "calendar-form_service"
                     placeholder="Enter Requested Service"
                     name="reason"
                     type="text"

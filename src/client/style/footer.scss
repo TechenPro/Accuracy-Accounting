@@ -79,6 +79,7 @@
 
 @media(max-width: 50em) {
     .footer {
+        height: 300px;
         width: 100vw;
         grid-template-columns: 1fr;
         grid-template-rows: 5fr 5fr 1fr;
