@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A website project for the 2018 FBLA Web Development competition",
   "scripts": {
-    "postinstall": "copy env.example.js env.js",
+    "postinstall": "cp env.example.js env.js",
     "start": "npm run build && node index.js",
     "dev": "webpack-dev-server --config webpack/dev.config.js --watch",
     "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --color",
