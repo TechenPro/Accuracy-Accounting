@@ -10,6 +10,7 @@ const useBodyParser = bodyParser.json({ type: '*/*'});
 
 const app = express();
 const port = process.env.PORT || 3000;
+// console.log(process.env.PORT);
 
 
 app.use(express.static(path.join(__dirname, '/dist/')));
@@ -20,20 +21,23 @@ app.post("/api/signin", useBodyParser, (req, res) => {
 });
 
 app.post("/api/newEvent", useBodyParser, (req, res) => {
-  // let events = fileOp.jsonToArray(fileOp.readData(path.join(__dirname + '/dist/data/calendar.json')));
-  // events.push(req.body);
-  // let events_json = {};
-  // events.forEach(event => {
-  //   events_json[events.indexOf(event)] = event;
-  // });
-  // fileOp.writeData(path.join(__dirname + '/dist/data/calendar.json'), events_json);
-  // res.send(events);
-  const locals = {userName: "Mr. Clean"};
-  const messageInfo = {
-    email: "zant375.01@gmail.com", fromEmail: "Accuracy@A.com",
-    fromName: "Mr. Clean", subject: "Testing"
-  };
-  mailer.sendOne("test", messageInfo, locals);
+  let events = fileOp.jsonToArray(fileOp.readData(path.join(__dirname + '/dist/data/calendar.json')));
+  events.push(req.body);
+  let events_json = {};
+  events.forEach(event => {
+    events_json[events.indexOf(event)] = event;
+  });
+  fileOp.writeData(path.join(__dirname + '/dist/data/calendar.json'), events_json);
+
+  // Email Confirmation
+  // const messageInfo = {
+  //   email: `${req.body.email}`, fromEmail: "service.accuracy@gmail.com",
+  //   fromName: "Accuracy Accounting", subject: "Appointment Confirmation", 
+  //   text: `Dear ${req.body.client},\n\n\tThank you for choosing to work with Accuracy! This email is to confirm your appointment about "${req.body.reason}" is scheduled for ${req.body.date.replace(":00 GMT-0700 (Mountain Standard Time)", '.')} Since you are not a registered client of Accuracy yet, you do not have access to a client account, however should you choose to continue working with Accuracy after your appointment, one will be provided for your convenience.\n\nSincerely,\nThe Accuracy Team`
+  // };
+  // mailer.sendEmail(messageInfo);
+
+  res.send(events);
 })
 
 app.get("/api/getSchedule", (req, res) => {
