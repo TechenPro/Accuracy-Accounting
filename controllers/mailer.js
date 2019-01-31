@@ -1,7 +1,3 @@
-// var path = require("path");
-// var templatesDir = path.resolve(__dirname, "templates");
-// var Email = require("email-templates");
-
 const mailjet = require("node-mailjet").connect(
     "public-key-here",
     "secret-key-here"
@@ -25,23 +21,3 @@ exports.sendEmail = (messageInfo) => {
     });
 
 };
-
-// exports.sendOne = function (templateName, messageInfo, locals) {
-//     const email = new Email({
-//         views: {
-//             root: templatesDir,
-//             options: {
-//                 extension: "ejs"
-//             }
-//         }
-//     });
-
-//     return Promise.all([
-//             email.render(`${templateName}/html`, locals),
-//             email.render(`${templateName}/text`, locals)
-//         ])
-//         .then(([html, text]) => {
-//             return sendEmail(messageInfo, text, html);
-//         })
-//         .catch(console.error);
-// };

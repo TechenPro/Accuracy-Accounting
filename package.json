@@ -1,7 +1,7 @@
 {
   "name": "accuracy-accounting",
   "version": "1.0.0",
-  "description": "A website project for the 2018 FBLA Web Development competition",
+  "description": "A website project for the 2019 FBLA Web Development competition",
   "scripts": {
     "postinstall": "cp env.example.js env.js",
     "start": "npm run build && node index.js",
@@ -17,7 +17,8 @@
   },
   "keywords": [
     "FBLA",
-    "Competition"
+    "Competition",
+    "Accuracy Accounting"
   ],
   "author": "TechenPro, Chillin McGee, Doctor Faust",
   "license": "MIT",
@@ -38,7 +39,6 @@
     "body-parser": "^1.18.3",
     "bootstrap": "^4.0.0-alpha.5",
     "cross-env": "^5.2.0",
-    "ejs": "^2.6.1",
     "email-templates": "^4.0.1",
     "express": "^4.16.3",
     "fs-extra": "^7.0.1",
