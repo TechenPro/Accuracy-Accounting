@@ -17,11 +17,12 @@ export default class contact extends Component {
                         Address: 301 W Vine St, <br></br>
                         Tooele, Ut 84074<br></br>
                         Find us on social media:  
-                    
+
+                        <div className='smHolder'>
                         <a href='https://twitter.com/AccountingAccu1'> <img className='contact-media-logo' src='./assets/footer-twitter.png'></img></a>
                         <a href='https://www.facebook.com/login'><img className='contact-media-logo' src='./assets/footer-facebook.png'></img></a>
                         <a href='https://www.linkedin.com'><img className='contact-media-logo' src='./assets/footer-linkedin.png'></img></a>
-                       
+                       </div>
                     </div>
                     <div className='contact-txt-right'>
                         
