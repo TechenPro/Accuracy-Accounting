@@ -18,11 +18,11 @@ export default class Page404 extends Component {
                 </div>
 
                 <div className='body-text'>
-                    We provide high quality service to all of you clients. We apply our large experience to make sure all aspects of our service are catered individually to each client. Our 20 years of business gives us the knowledge and experience to provide services that are unmatched by other accounting firms. 
+                    We provide high quality service to all our clients. We apply our large experience to make sure all aspects of our service are catered individually to each client. Our 20 years of business gives us the knowledge and experience to provide services that are unmatched by other accounting firms.
                     <br /> <br /> 
                     We develop a plan for every client to help the fulfill their needs and enable them to reach their highest potential. We are sure to draw every plan to the client’s needs in a manner that ensures commitments are met, problems are solved, and surprises are avoided.
                     <br /><br /> 
-                    At Accuracy, our experienced professionals will deliver high quality services to help you gain confidence, manage your business, and strengthen your controls.
+                    At Accuracy, our experienced professionals will deliver high quality services to help you gain confidence and manage your business.
                 </div>
 
                 <div className='subheading' id='taxes'>
@@ -35,7 +35,7 @@ export default class Page404 extends Component {
                     </div>
 
                     <div className='mini-subheading'>
-                        Our tax services include:
+                        Our Tax Services Include:
                     </div>
 
                     <div className='micro-subheading'>
@@ -58,7 +58,7 @@ export default class Page404 extends Component {
                     </div>
 
                     <div className='extra-margin'>
-                            We understand the need for business to generate as much profit as possible. Our tax services can be a great way to give you that extra little bit of profit that would allow your business to expand and grow. We make sure our client is meeting all the requirements and taking advantage of all the cost saving opportunities available.
+                        We understand the need for business to generate as much profit as possible. Our tax services can be a great way to give you that extra little bit of profit that would allow your business to expand and grow. We make sure our clients are meeting all the requirements and take advantage of all the cost saving opportunities available.
                     </div>
 
                     <div className='micro-subheading'>
@@ -94,7 +94,7 @@ export default class Page404 extends Component {
                     </div>
 
                     <div className='extra-margin'>
-                        We understand that there is more to an audit than issuing an opinion on your financial statements. We know that every audit is different, depending on the client’s specific needs. We have a dedicated team that knows and understands the auditing process and can help you no matter your situation. 
+                        We understand that there is more to an audit than issuing an opinion on your financial statements. We know that every audit is different depending on the client’s specific needs. We have a dedicated team that knows and understands the auditing process and can help you no matter your situation. 
                     </div>
 
                     <div className='micro-subheading'>
@@ -110,7 +110,7 @@ export default class Page404 extends Component {
                     </div>
 
                     <div className='extra-margin'>
-                        We have worked with countless companies, so we have the experience to help you determine the procedures that best fit our clients' needs
+                        We have worked with countless companies, so we have the experience to help you determine the procedures that best fit our clients' needs.
                     </div>
 
                     <div className='micro-subheading'>
@@ -118,7 +118,7 @@ export default class Page404 extends Component {
                     </div>
 
                     <div className='extra-margin'>
-                        Income and profit can be very complicated, and incredibly vital to a company’s growth. It quickly becomes complex modeling a company’s cash flow. We help you create a plan for the future.
+                        Income and profit can be very complicated and incredibly vital to a company’s growth. It quickly becomes complex and models a company’s cash flow. We help you create a plan for the future.
                     </div>
 
                     <div className='services-image2'>
@@ -132,7 +132,7 @@ export default class Page404 extends Component {
             </div>
 
                 <div className='body-text'>
-                    Our 20 years of experience and knowledge allows us to anticipate problems and seek solutions before those problems grow. We help set goals for our clients and aid them in creating a plan to reach those goals, and eventually go past them. 
+                    Our 20 years of experience and knowledge allows us to anticipate problems and seek solutions before those problems grow. We help set goals for our clients and aid them in creating a plan to reach those goals and go past them. 
                 </div>
 
                 <div className='mini-subheading'>
@@ -168,7 +168,7 @@ export default class Page404 extends Component {
                 </div>
 
                 <div className='extra-margin'>
-                    We have worked with several businesses and have gained the experience needed to aid our clients in creating a succession plan to ensure smooth transitions.
+                    We have worked with several businesses and have gained the experience needed to aid our clients in creating a successful plan to ensure smooth transitions.
                 </div>
 
             </div>

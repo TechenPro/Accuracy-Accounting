@@ -12,7 +12,7 @@ export default class industries extends Component {
                 </div>
 
                 <div className='body-text-center'>
-                    At Accuracy we help our clients with all financing from all industries. With over 20 years of business, we have extensive experiance in many specific industries allowing us to provide the best possible service to our clients. With so much experiance under our belt, we are experts in providing advice that meets your every accounting need in these industries.
+                    At Accuracy we help our clients with all financing from all industries. With over 20 years of business, we have extensive experience in many specific industries allowing us to provide the best possible service to our clients. With so much experience under our belt, we are experts in providing advice that meets your every accounting need in these industries.
                     <br /><br /><br /><br />
                 </div>
  
@@ -25,13 +25,13 @@ export default class industries extends Component {
                         <div className='body-text'>
                             We have decades worth of experience with this industry allowing us to put our vast knowledge to work for you. We understand the importance of this industry and take care in  providing the best possible assistance. We have experts who can meet with you and help regardless of your needs.
                             <br /> <br />
-                            No matter what you struggling with, from financial reporting to simple questions, ask one of our construction members for help. We would be glad to assist you with your every need.
+                            No matter what you are struggling with, from financial reporting to simple questions, ask one of our construction members for help. We would be glad to assist you with your every need.
                             <br /> <br />
-                            We can assist you with all you construction needs including:
+                            We can assist you with all your construction needs including:
                         </div>
                         <div className='industries-bullets'>
                             <br />
-                            <li>Bonding and Bandking relationships</li> <br />
+                            <li>Bonding and Banking relationships</li> <br />
                             <li>Cash flow management</li> <br />
                             <li>Construction software recommendations</li> <br />
                             <li>Multi-stage operations</li> <br />
@@ -183,7 +183,7 @@ export default class industries extends Component {
                         <div className='industries-bullets'>
                             <br />
                             <li>Cash Flow Management</li> <br />
-                            <li>Audit services</li> <br />
+                            <li>Audit Services</li> <br />
                             <li>Tax Return Preparation</li> <br />
                             <li>Fixed Asset Tracking</li> <br />
                             <li>Quick Books Consulting</li>
@@ -205,7 +205,7 @@ export default class industries extends Component {
 
                 <div className='industry-holder'>
                     <div className='body-text'>
-                        With our vast experience in real estate, we can transfer our knowledge and add more specific to the property management industry. Our bookkeeping services can provide back office support and allow you to focus on expanding you company.
+                        With our vast experience in real estate, we can transfer our knowledge specific to the property management industry to our clients. Our bookkeeping services can provide back office support and allow you to focus on expanding your company.
                     </div>
                     <div className='industries-image'>
                         <ImageLink
@@ -241,7 +241,7 @@ export default class industries extends Component {
                 <div className = 'industry-holder'>
                     <div>
                         <div className='body-text'>
-                            Manufacturing is an old but important industry. We help our clients understand the changing and complex law surrounding this industry. We assist our clients in becoming more successful and growing by finding ways to cunt costs and maximize efficiency while minimizing costs.
+                            Manufacturing is an old but important industry. We help our clients understand the changing and complex law surrounding this industry. We assist our clients in becoming more successful and growing by finding ways to cut costs and maximize efficiency while minimizing costs.
                             <br /> <br />
                             Our Manufacturing services include:
                         </div>
@@ -300,7 +300,7 @@ export default class industries extends Component {
 
                 <div className = 'industry-holder'>
                     <div className='body-text'>
-                        We have a dedicated team of auditors that understand the complex procedure of performing employee benefit pan audits. This team has the essential skills required to ensure the appropriate standards and regulation as made that could impact you employee’s benefit plan. Accuracy is devoted to achieving the best quality audit possible.
+                        We have a dedicated team of auditors that understand the complex procedure of performing employee benefit plan audits. This team has the essential skills required to ensure the appropriate standards and regulation as made that could impact you employee’s benefit plan. Accuracy is devoted to achieving the best quality audit possible.
                     </div>
                     <div className='industries-image'>
                         <ImageLink

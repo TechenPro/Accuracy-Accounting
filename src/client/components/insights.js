@@ -22,12 +22,12 @@ export default class insights extends Component {
                     </div>
 
                     <div className='faq-answers'>
-                        Each of our services are charged differently, and greatly depend varying circumstances. Contact us for a free quote. You can find our contact information
+                        Each of our services are charged differently, and greatly depend on varying circumstances. Contact us for a free quote. You can find our contact information here.
                         <a className='insights-link' href='/contact'> here</a>.
                     </div>
 
                     <div className='insights-subheading'>
-                        Can small businesses you your services?
+                        Can small businesses use your services?
                     </div>
 
                     <div className='faq-answers'>
