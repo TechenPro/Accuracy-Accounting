@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { NavLink } from "react-router-dom"
 
-import ImageLink from './homePage/imageLink';
 
 export default class insights extends Component {
     render() { 
@@ -8,9 +8,7 @@ export default class insights extends Component {
             <div className='insights'>
 
                 <div className='insights-img'>
-                    <ImageLink
-                        imageurl='./assets/insights.png'
-                    />
+                    <img src='./assets/insights.png' />
                 </div>
 
                 <div className='insights-heading'>
@@ -23,7 +21,7 @@ export default class insights extends Component {
 
                     <div className='faq-answers'>
                         Each of our services are charged differently, and greatly depend on varying circumstances. Contact us for a free quote. You can find our contact information here.
-                        <a className='insights-link' href='/contact'> here</a>.
+                        <NavLink className='insights-link' to='/contact'> here</NavLink>.
                     </div>
 
                     <div className='insights-subheading'>
@@ -40,9 +38,9 @@ export default class insights extends Component {
 
                     <div className='faq-answers'>
                         You can schedule a meeting at any open time slot
-                        <a className='insights-link' href='/client-schedular'> here</a>.
+                        <NavLink className='insights-link' to='/client-schedular'> here</NavLink>.
                         You can also send us and email or give us a call for smaller inquires. Our contact information can be found
-                        <a className='insights-link' href='/contact'> here</a>.
+                        <NavLink className='insights-link' to='/contact'> here</NavLink>.
                     </div>
 
                 <div className='insights-heading-testimonials'>

@@ -18,9 +18,9 @@ export default class homePage extends Component {
                         Accounting < div className='city-text-sub-img' ><img src= './assets/header-logo.png' ></img></div> n - Point.
                     </div>
                 </div>
-                <ImageLink
+                <img
                     className='centerImg'
-                    imageurl= './assets/homepage-animation.gif'
+                    src= './assets/homepage-animation.gif'
                 /> 
             
             </div>

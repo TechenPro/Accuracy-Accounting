@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import ImageLink from './homePage/imageLink';
 
 export default class about extends Component {
     render() {
@@ -8,7 +7,7 @@ export default class about extends Component {
 
             <div className='about-page'>
                 <div className='about-page-image'>
-                    <ImageLink imageurl='./assets/about.png' />
+                    <img src='./assets/about.png' />
                 </div>
 
                 <div className='about-page-subheading'>

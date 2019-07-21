@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-import ImageLink from './homePage/imageLink';
 
 export default class Page404 extends Component {
     render() {
@@ -8,9 +7,7 @@ export default class Page404 extends Component {
             <div className='services-page'>
 
                 <div className='services-image'>
-                    <ImageLink
-                        imageurl='./assets/services-top.png'
-                    />
+                    <img src='./assets/services-top.png' />
                 </div>
 
                 <div className='heading'>
@@ -122,9 +119,7 @@ export default class Page404 extends Component {
                     </div>
 
                     <div className='services-image2'>
-                    <ImageLink
-                        imageurl='./assets/services-bottom.png'
-                        />
+                    <img src='./assets/services-bottom.png' />
                     </div>
 
             <div className='subheading' id='advisory'>

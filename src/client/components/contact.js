@@ -26,7 +26,7 @@ export default class contact extends Component {
                     </div>
                     <div className='contact-txt-right'>
                         
-                        <a class="twitter-timeline" href="https://twitter.com/AccountingAccu1">Tweets by Accuracy</a>
+                        <a className="twitter-timeline" href="https://twitter.com/AccountingAccu1">Tweets by Accuracy</a>
                         
                     </div>
                 </div>

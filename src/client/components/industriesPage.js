@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import ImageLink from './homePage/imageLink';
 
 export default class industries extends Component {
     render() {
@@ -40,8 +39,8 @@ export default class industries extends Component {
                         </div>
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-construction.png'
+                        <img
+                            src='./assets/industries-construction.png'
                         />
                     </div>
                 </div>
@@ -71,8 +70,8 @@ export default class industries extends Component {
                         </div>
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-realestate.png'
+                        <img
+                            src='./assets/industries-realestate.png'
                         />
                     </div>
                 </div>
@@ -101,8 +100,8 @@ export default class industries extends Component {
                         </div>
                     </div>
                     <div className='industries-image' >
-                        <ImageLink
-                            imageurl='./assets/industries-nonprofit.png'
+                        <img
+                            src='./assets/industries-nonprofit.png'
                         />
                     </div>
                 </div>
@@ -129,8 +128,8 @@ export default class industries extends Component {
                         </div>
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-professionalservices.png'
+                        <img
+                            src='./assets/industries-professionalservices.png'
                         />
                     </div>
                 </div>
@@ -144,8 +143,8 @@ export default class industries extends Component {
                         The energy industry has a completely different set of issues and challenges that other industries don’t have to face. At Accounting, our advisors understand these issues, and can analyze energy trends to help their clients turn ideas into opportunities. This industry is rapidly changing, and our professionals can help you keep up to help to find you place in this complex industry.
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-energy.png'
+                        <img
+                            src='./assets/industries-energy.png'
                         />
                     </div>
                 </div>
@@ -161,8 +160,8 @@ export default class industries extends Component {
                         With the increasing compaction in this industry, we can help your company come out on top by helping you integrate new technologies to reduce costs and improve operations. Our goal is to help you run a more efficient business. 
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl = './assets/industries-transportation.png'
+                        <img
+                            src = './assets/industries-transportation.png'
                         />
                     </div>
                 </div>
@@ -191,8 +190,8 @@ export default class industries extends Component {
                         </div>
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-agriculture.png'
+                        <img
+                            src='./assets/industries-agriculture.png'
                         />
                     </div>
                 </div>
@@ -208,8 +207,8 @@ export default class industries extends Component {
                         With our vast experience in real estate, we can transfer our knowledge specific to the property management industry to our clients. Our bookkeeping services can provide back office support and allow you to focus on expanding your company.
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-propertymanagment.png'
+                        <img
+                            src='./assets/industries-propertymanagment.png'
                         />
                     </div>
                 </div>
@@ -225,8 +224,8 @@ export default class industries extends Component {
                         Accounting can help you manage every aspect of your company from inventory or financial reporting. Our team of highly trained experts can provide you with the strategies to ensure success. We can also provide you with ideas to reduce costs and minimize daily operational issues or help you to put your ideas into action. No matter what wholesale and distribution issue you have we have the knowledge and experience to ensure you keep accurate order fulfillment and delivery.
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-wholesale&distribution.png'
+                        <img
+                            src='./assets/industries-wholesale&distribution.png'
                         />
                     </div>
                 </div>
@@ -256,8 +255,8 @@ export default class industries extends Component {
                         </div>
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-manufacturing.png'
+                        <img
+                            src='./assets/industries-manufacturing.png'
                         />
                     </div>
                 </div>
@@ -286,8 +285,8 @@ export default class industries extends Component {
                         </div>
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-communications.png'
+                        <img
+                            src='./assets/industries-communications.png'
                         />
                     </div>
                 </div>
@@ -303,8 +302,8 @@ export default class industries extends Component {
                         We have a dedicated team of auditors that understand the complex procedure of performing employee benefit plan audits. This team has the essential skills required to ensure the appropriate standards and regulation as made that could impact you employee’s benefit plan. Accuracy is devoted to achieving the best quality audit possible.
                     </div>
                     <div className='industries-image'>
-                        <ImageLink
-                            imageurl='./assets/industries-benefitplans.png'
+                        <img
+                            src='./assets/industries-benefitplans.png'
                         />
                     </div>
                 </div>

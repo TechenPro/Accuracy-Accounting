@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
+import { NavLink } from "react-router-dom";
 
 export default class header extends Component {
     render() {
         return (
             <div className = 'header-btn-holder'>
                 < div className='header-btn-holder-left' >
-                    <a className='header-btn' href="/services" > Services </a>
-                    < a className = 'header-btn'href = "/insights" > Insights </a>
-                    <a className='header-btn' href="/client-schedular">Schedule A Time</a>
+                    <NavLink className='header-btn' to="/services" > Services </NavLink>
+                    <NavLink className = 'header-btn' to = "/insights" > Insights </NavLink>
+                    <NavLink className='header-btn' to="/client-schedular">Schedule A Time</NavLink>
                 </div>
 
-                <a className='header-center-logo' href="/">
+                <NavLink className='header-center-logo' to="/">
                     < img src = './assets/header-logo.png'></img>
-                </a>
+                </NavLink>
 
                 < div className='header-btn-holder-right' >
-                    <a className='header-btn' href="/about">About</a>
-                    <a className='header-btn' href="/contact">Contact</a>
-                    <a className='header-btn' href="/login">Client Login</a>
+                    <NavLink className='header-btn' to="/about">About</NavLink>
+                    <NavLink className='header-btn' to="/contact">Contact</NavLink>
+                    <NavLink className='header-btn' to="/login">Client Login</NavLink>
                 </div>
             </div>
             )
         }
     }
+ 

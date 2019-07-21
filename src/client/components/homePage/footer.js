@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from "react-router-dom"
 
 export default class Page404 extends Component {
     render() {
@@ -32,14 +33,14 @@ export default class Page404 extends Component {
                     </div>
                     < div className = 'footer-txt-sub' >
                         <div className='footer-txt-sub-left'>
-                            <a href='/services'>Services</a><br></br>
-                            <a href='/insights'>Insights</a><br></br>
-                            <a href ='/client-schedular'> Schedule a Time</a>
+                            <NavLink to='/services'>Services</NavLink><br></br>
+                            <NavLink to='/insights'>Insights</NavLink><br></br>
+                            <NavLink to ='/client-schedular'> Schedule a Time</NavLink>
                         </div>
                         <div className='footer-txt-sub-right'>
-                            <a href='/about'>About</a><br></br>
-                            <a href='/contact'>Contact</a><br></br>
-                            <a href='/login'>Client Login</a>
+                            <NavLink to='/about'>About</NavLink><br></br>
+                            <NavLink to='/contact'>Contact</NavLink><br></br>
+                            <NavLink to='/login'>Client Login</NavLink>
                         </div>
                     </div>
                 </div>
@@ -56,7 +57,7 @@ export default class Page404 extends Component {
                 </div>*/}
                 
                 <div className='footer-legal'>
-                    &copy;Copyright 2019 Accuracy < a href = '/legal' >More Info</a>
+                    &copy;Copyright 2019 Accuracy <NavLink to = '/legal' >More Info</NavLink>
                 </div>
             </div>
         )
