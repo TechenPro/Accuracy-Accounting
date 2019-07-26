@@ -4,67 +4,85 @@
     padding: 50px;
 }
 
-.insights-link {
-    color: rgb(0, 0, 228);
-    text-decoration: none;
+.faq {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
 
-    &:hover {
-        text-decoration: none;
+    .faq-right-column {
+        .insights-heading {
+            color: $offTealColor;
+            font-size: 2.5rem;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .insights-subheading {
+            color: $offTealColor;
+            font-size: 2rem;
+            //padding-top: 20px;
+        }
+
+        .faq-answers {
+            position: relative;
+            margin: 1rem;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            //top: 4rem;
+
+            .insights-link {
+                color: blue;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+    .faq-left-column {
+        padding-top: 45px;
+        .insights-img img{
+            width: 100%;
+            padding-left: 1.5rem;
+        }
+
     }
 }
 
-.faq-answers {
-    position: relative;
-    margin: 1rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    //top: 4rem;
+
+
+.testimonials-wrapper {
+    .insights-heading-testimonials {
+        color: $offTealColor;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        position: relative;
+        color: white;
+        font-size: 2rem;
+        padding-top: 35px;
+
+        .testimonial-box {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            padding: 20px;
+            background-color: $tealColor;
+            line-height: 1.5em;
+
+        }
+    }
 }
 
-.testimonials {
-    position: relative;
-    color: white;
-    font-size: 2rem;
-    top: 4rem;
-    column-count: 3;
-    margin: 7rem;
-    margin-top:0rem;
-}
 
-.testimonial-box {
-    height: 15rem;
-    width: 25rem;
-    padding: 3rem;
-    background-color: $tealColor;
-}
-
-.insights-img img{
-    position: relative;
-    height: 30rem;
-    float: right;
-    //padding-top: 10rem;
-    padding-left: 1.5rem;
-}
-
-.insights-heading {
-    color: $offTealColor;
-    font-size: 2.5rem;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.insights-subheading {
-    color: $offTealColor;
-    font-size: 2rem;
-    //padding-top: 20px;
-}
-
-.insights-heading-testimonials {
-    color: $offTealColor;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 30px;
-}
 
 
 @media(max-width: 50em) {
@@ -73,78 +91,75 @@
     grid-row: content-s/content-e;
     display: block;
     padding: 10px;
+    padding-top: 0px;
     }
 
-    .insights-link {
-        color: rgb(0, 0, 228);
-        text-decoration: none;
+    .faq {
+        grid-template-columns: 1fr;
 
-        &:hover {
-            text-decoration: none;
+        .faq-right-column {
+            order: 2;
+
+             .insights-heading {
+                color: $offTealColor;
+                font-size: 2.5rem;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .insights-subheading {
+                color: $offTealColor;
+                font-size: 2rem;
+                //padding-top: 20px;
+            }
+
+            .faq-answers {
+                position: relative;
+                margin: 1rem;
+                margin-top: 1rem;
+                font-size: 1.6rem;
+
+                .insights-link {
+                        color: rgb(0, 0, 228);
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+            }
+        }
+
+        .faq-left-column{
+            padding-top: 0px;
+            order: 1;
+            .insights-img img{
+                width: 110%;
+                margin-left: -10%;
+                
+            }
         }
     }
 
-    .faq-answers {
-        position: relative;
-        margin: 1rem;
-        margin-top: 1rem;
-        font-size: 1.6rem;
-        //top: 4rem;
+    
+
+    .testimonials-wrapper {
+
+        .testimonials {
+            grid-template-columns: 1fr;
+
+        }
     }
 
-    .testimonials {
-        // position: relative;
-        color: white;
-        font-size: 2rem;
-        top: 4rem;
-        display: flex;
-        flex-direction: column;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: -25px;
-        margin-bottom: 25px;
-        justify-content: space-between;
-        align-content: center;
-    }
+    
 
-    .testimonial-box {
-        margin-top: 5px;
-        margin-bottom: 10px;
-        height: 85%;
-        
-        width: 100%;
-        padding: 3rem;
-        background-color: $tealColor;
-    }
+    
 
-    .insights-img img{
-        position: relative;
-        float: left;
-        width: 110%;
-        height: auto;
-        //padding-top: 10rem;
-        margin-left: -10%;
-        margin-top: -5%
-    }
+    
 
-    .insights-heading {
-        color: $offTealColor;
-        font-size: 2.5rem;
-        text-align: center;
-        padding-bottom: 20px;
-    }
+   
 
-    .insights-subheading {
-        color: $offTealColor;
-        font-size: 2rem;
-        //padding-top: 20px;
-    }
-
-    .insights-heading-testimonials {
-        color: $offTealColor;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 30px;
-    }
+    
 
 }
