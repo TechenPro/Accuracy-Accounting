@@ -1,12 +1,15 @@
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .header-btn-holder {
     grid-row: header-s/header-e;
     height:100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
     min-height: 50px;
     max-height: 75px;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -21,6 +24,8 @@
         display: flex;
         justify-content: space-around;
         align-content: center;
+
+        
     }
 
     &-right {
@@ -79,10 +84,29 @@
     }
 }
 
+.mobile-nav {
+    display: none;
+}
+
+.mobile-menu-wrapper {
+    width: 100vw;
+}
+
 @media(max-width: 50em)
 {
     .header-btn
     {
         display: none;
+    }
+
+    .header-btn-holder {
+        
+
+        .mobile-nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 25px;
+        }
     }
 }

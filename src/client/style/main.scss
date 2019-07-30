@@ -2,6 +2,7 @@
 @import 'home-page';
 @import 'industryCard';
 @import 'header';
+@import 'mobileMenu';
 @import 'aboutPage';
 @import 'industriesPage';
 @import 'textFormat';
@@ -42,7 +43,7 @@ body {
 .layout-grid {
     width: 100vw;
     display: grid;
-    grid-template-rows: [header-s] minmax(50px, 75px) [header-e content-s] 1fr [content-e footer-s] 200px [footer-e];
+    grid-template-rows: [header-s] minmax(50px, 500px) [header-e content-s] 1fr [content-e footer-s] 200px [footer-e];
     min-height: 100vh;
     justify-items: center;
 }
