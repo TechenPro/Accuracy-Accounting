@@ -30,6 +30,8 @@ import Calendar from './components/calendarPage';
 import legal from './components/legal'
 import contact from './components/contact';
 import insights from './components/insights';
+import Header from './components/homePage/header';
+import Footer from './components/homePage/footer';
 
 
 function main() {
@@ -38,7 +40,8 @@ function main() {
 
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Router history={history}>
-        <Layout>
+        <div>
+          <Header />
           { /* Only allows one path to be rendered at any time */ }
           <Switch>
 
@@ -56,8 +59,10 @@ function main() {
             <Route component={Page404}/>
 
           </Switch>
-        </Layout>
+          <Footer  />
+        </div>
       </Router>
+      
     </Provider>
 
     , document.querySelector('.app-wrapper'));

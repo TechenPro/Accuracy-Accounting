@@ -32,11 +32,11 @@ export default class className extends Component {
 
             <div className="nav-content">
                 <NavLink to="/services">Services</NavLink>
-                <NavLink to="/services">Insights</NavLink>
-                <NavLink to="/services">Schedule A Time</NavLink>
-                <NavLink to="/services">About</NavLink>
-                <NavLink to="/services">Contact</NavLink>
-                <NavLink to="/services">CLient Login</NavLink>
+                <NavLink to="/insights">Insights</NavLink>
+                <NavLink to="/client-schedular">Schedule A Time</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/login">CLient Login</NavLink>
             </div>
         )
     }

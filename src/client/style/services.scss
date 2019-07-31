@@ -1,49 +1,82 @@
 .services-page {
-    grid-row: content-s/content-e;
-    display: block;
-    padding: 50px;
+    padding: 20px 50px;
+
+    .heading {
+        color: $offTealColor;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .body-text {
+        color: black;
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        line-height: 1.3em;
+        padding: 0px 10px;
+        margin: 0px;
+    }
+
+    .subheading {
+        color: $offTealColor;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    .mini-subheading {
+        color: $tealColor;
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    .micro-subheading {
+        color: $offTealColor;
+        font-size: 18px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        
+    }
 }
 
-.services-image img {
-    position: relative;
+.services-image img, .services-image-bottom img {
     float: right;
     width: 35%;
-    padding-top: 2rem;
-    padding-left: 1rem;
 }
 
-.services-image2 img {
-    position: relative;
-    float: right;
-    width: 35%;
-    padding-top: 16rem;
-    padding-left: 1rem;
-} 
 
 @media(max-width: 50em) {
 
     .services-page {
-    grid-row: content-s/content-e;
-    display: block;
-    padding: 10px;
-    padding-bottom: 30px;
-    }
+        padding: 0px;
+        
 
-    .services-image img {
-        position: relative;
-        float: left;
-        width: 115%;
-        margin-left: -10%;
-        margin-top: -25%;
-    }
+        .services-onpage {
+            display: flex;
+            flex-direction: column;
 
-    .services-image2 img {
-        position: relative;
-        float: left;
-        width: 35%;
-        padding-top: 16rem;
-        margin-left: -100%;
-    } 
+            .services-image {
+                order: 1;
+            }
+            
+            
+
+            .heading {
+                order: 2;
+            }
+
+            .body-text {
+                order: 3;
+            }
+        }
+        .services-image img {
+            width: 100%;
+        }
+    }
 
 }
 

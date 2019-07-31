@@ -5,7 +5,7 @@
 @import 'mobileMenu';
 @import 'aboutPage';
 @import 'industriesPage';
-@import 'textFormat';
+// @import 'textFormat';
 @import 'services';
 @import 'calendar';
 @import 'footer';
@@ -31,6 +31,7 @@ html {
 }
 
 body {
+    width: 100vw;
     overflow-x: hidden;
     font-weight: normal;
 

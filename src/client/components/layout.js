@@ -7,9 +7,9 @@ export default class Layout extends Component {
     render() {
         return (
             <div className='layout-grid'>
-                <Header/>
+                {/* <Header/>
                 {this.props.children}
-                <Footer/>
+                <Footer/> */}
             </div>
         )
     }

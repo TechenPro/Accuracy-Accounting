@@ -1,11 +1,10 @@
 .header-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
 }
 
 .header-btn-holder {
-    grid-row: header-s/header-e;
     height:100%;
     min-height: 50px;
     max-height: 75px;
