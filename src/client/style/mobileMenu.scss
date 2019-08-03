@@ -1,6 +1,31 @@
 .nav-content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr;
+    position: absolute;
     width: 100vw;
     background-color: $tealColor;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 1s ease-in-out;
+    z-index: 10;
+
+
+ 
+
+    &-link-holder {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+
+        &:hover, :active {
+            text-decoration: none;
+            background-color: $offTealColor; 
+        }
+    }
+    
+    &-link:hover {
+        text-decoration: none;
+    }
 }

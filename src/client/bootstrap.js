@@ -18,6 +18,12 @@ import history from './history';
 // Imported Functions
 import requireAuth from './functions/authFunctions';
 
+// Font Awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+
+library.add(faBars, faTimes)
+
 // Imported Components
 import Layout from './components/layout';
 import Page404 from './components/404';
@@ -43,22 +49,24 @@ function main() {
         <div>
           <Header />
           { /* Only allows one path to be rendered at any time */ }
-          <Switch>
+          <div className="full-page-wrapper">
+            <Switch>
 
-            <Route path='/' exact component={homePage}/>
-            <Route path='/login' component={Login}/>
-            <Route path='/client-schedular' component={Calendar}/>
-            <Route path='/home' component={homePage}/>
-            <Route path='/about' component={about}/>
-            <Route path='/industries' component={industries}/>
-            <Route path='/services' component={services}/>
-            <Route path='/legal' component={legal} />
-            <Route path='/contact' component={contact} />
-            <Route path='/insights' component={insights} />
-            {/* Catches All Invalid Links */}
-            <Route component={Page404}/>
+              <Route path='/' exact component={homePage}/>
+              <Route path='/login' component={Login}/>
+              <Route path='/client-schedular' component={Calendar}/>
+              <Route path='/home' component={homePage}/>
+              <Route path='/about' component={about}/>
+              <Route path='/industries' component={industries}/>
+              <Route path='/services' component={services}/>
+              <Route path='/legal' component={legal} />
+              <Route path='/contact' component={contact} />
+              <Route path='/insights' component={insights} />
+              {/* Catches All Invalid Links */}
+              <Route component={Page404}/>
 
-          </Switch>
+            </Switch>
+          </div>
           <Footer  />
         </div>
       </Router>

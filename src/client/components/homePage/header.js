@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 
 import MobileMenu from "./mobileMenu"
 
@@ -7,10 +9,32 @@ export default class header extends Component {
     constructor() {
         super()
         this.state ={
-            menuStatus: "Open"
+            menuStatus: "Open",
+            menuStyles: {
+                "top": "-280px",
+            }
         }
 
         this.menuClick = this.menuClick.bind(this)
+        this.closeMenu = this.closeMenu.bind(this)
+        this.openMenu = this.openMenu.bind(this)
+    }
+
+    closeMenu() {
+        this.setState({
+            menuStatus: "Open",
+            menuStyles: {
+                "top": "-280px"
+            }
+        })
+    }
+
+    openMenu() {
+        this.setState({
+            menuStyles: {
+                "top": "50px"
+            }
+        })
     }
 
     menuClick() {
@@ -19,18 +43,23 @@ export default class header extends Component {
                 menuStatus: "Close"
             })
         } else {
+            this.closeMenu()
             this.setState({
-                menuStatus: "Open"
+                menuHeight: 0
             })
         }
     }
 
     render() {
         return (
-            <div className="header-wrappen">
+            <div className="header-wrapper">
                 <div className = 'header-btn-holder'>
                     <div className="mobile-nav" onClick={this.menuClick}>
-                        {this.state.menuStatus}
+                        {this.state.menuStatus === "Open" ?
+                        <FontAwesomeIcon icon="bars" onClick={this.openMenu} />
+                        :
+                        <FontAwesomeIcon icon="times" />
+                    }
                     </div>
 
                     < div className='header-btn-holder-left' >
@@ -40,7 +69,7 @@ export default class header extends Component {
                         <NavLink className='header-btn' to="/client-schedular">Schedule A Time</NavLink>
                     </div>
 
-                    <NavLink className='header-center-logo' to="/">
+                    <NavLink className='header-center-logo' to="/" onClick={this.closeMenu}>
                         < img src = './assets/header-logo.png'></img>
                     </NavLink>
 
@@ -51,13 +80,15 @@ export default class header extends Component {
                     </div>
                 </div>
                 
-                {this.state.menuStatus === "Close" ?
+                {/* {this.state.menuStatus === "Close" ? */}
                 <div className="mobile-menu-wrapper">
-                    <MobileMenu />
+                    <MobileMenu 
+                     closeMenu = {this.closeMenu}
+                     menuStyles = {this.state.menuStyles} />
                 </div>
-                :
-                <div className="mobile-menu-wrapper"></div>
-                }
+                {/* :
+                <div className="mobile-menu-wrapper"></div> */}
+                {/* } */}
                 
             </div>
             )

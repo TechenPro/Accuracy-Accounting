@@ -2,41 +2,60 @@ import React, { Component } from 'react'
 import { NavLink } from "react-router-dom"
 
 
+
 export default class className extends Component {
-    constructor() {
-        super()
-        this.state = {
-            mobileMenuOpen: false
-        }
+    constructor(props) {
+        super(props)
+        
+        this.closeMobileMenu = this.closeMobileMenu.bind(this)
 
-        this.openNav = this.openNav.bind(this)
-        this.closeNav = this.closeNav.bind(this)
     }
 
-    openNav() {
-        console.log("open nav")
-        this.setState({
-            mobileMenuOpen: true
-        })
+    closeMobileMenu() {
+        this.props.closeMenu()
+        
     }
 
-    closeNav() {
-        console.log("close nav")
-        this.setState({
-            mobileMenuOpen: false
-        })
-    }
 
     render() {
         return ( 
 
-            <div className="nav-content">
-                <NavLink to="/services">Services</NavLink>
-                <NavLink to="/insights">Insights</NavLink>
-                <NavLink to="/client-schedular">Schedule A Time</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-                <NavLink to="/login">CLient Login</NavLink>
+            <div className="nav-content" style= {this.props.menuStyles}>
+                <NavLink activeClassName="nav-content-link" to="/" >
+                    <div className="nav-content-link-holder" onClick={this.closeMobileMenu}>
+                        Home
+                    </div>        
+                </NavLink>
+                <NavLink activeClassName="nav-content-link" to="/services">
+                    <div className="nav-content-link-holder" onClick={this.closeMobileMenu}>
+                        Services
+                    </div>        
+                </NavLink>
+                <NavLink activeClassName="nav-content-link" to="/insights">
+                    <div className="nav-content-link-holder" onClick={this.closeMobileMenu}>
+                        Insights
+                    </div>        
+                </NavLink>
+                <NavLink activeClassName="nav-content-link" to="/client-schedular">
+                    <div className="nav-content-link-holder" onClick={this.closeMobileMenu}>
+                        Schedule A Time
+                    </div>        
+                </NavLink>
+                <NavLink activeClassName="nav-content-link" to="/about">
+                    <div className="nav-content-link-holder" onClick={this.closeMobileMenu}>
+                        About
+                    </div>        
+                </NavLink>
+                <NavLink activeClassName="nav-content-link" to="/contact">
+                    <div className="nav-content-link-holder" onClick={this.closeMobileMenu}>
+                        Contact
+                    </div>        
+                </NavLink>
+                <NavLink activeClassName="nav-content-link" to="/login">
+                    <div className="nav-content-link-holder" onClick={this.closeMobileMenu}>
+                        Client Login
+                    </div>        
+                </NavLink>
             </div>
         )
     }

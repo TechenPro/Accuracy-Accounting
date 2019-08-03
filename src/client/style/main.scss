@@ -19,6 +19,10 @@ html {
     font-size: 62.5%; // 1rem is 10px
 }
 
+.full-page-wrapper {
+    padding-top: 50px;
+}
+
 // * is a wildcard selector that selects every tag within its scope.
 // Since this isn't nested, * selects every tag in the site.
 *,
