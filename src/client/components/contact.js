@@ -1,38 +1,42 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
+import ContactForm from "./contactForm";
+
  
 export default class contact extends Component {
     render() {
-        return (
+        return ( 
 
             <div className="contact-page-wrapper">
-                <div className="heading">
-                    <span className="heading-text">Accuracy</span>
-                    <hr />
-                </div>
+                <div className="top-wrapper">
+                    <div className="heading">
+                        <span className="heading-text">Accuracy</span>
+                        <hr />
+                    </div>
 
-                <div className="contact-info-grid">
-                    <div className="grid-item" id="phone">
-                        Phone: 1(800)-867-5309
-                    </div>
-                    <div className="grid-item" id="email">
-                        Email: accuracy@mailinator.com
-                    </div>
-                    <div className="grid-item" id="address1">
-                        Address: 301 W Vine St,
-                    </div>
-                    <div className="grid-item" id="media1">
-                        Find us on social media:
-                    </div>
-                    <div className="grid-item" id="address2">
-                        Tooele, Ut 84074
-                    </div>
-                    <div className="grid-item" id="media2">
-                        <div className="media-links">
-                            <a href='https://www.twitter.com/login'> <img className='media-logo' src='./assets/footer-twitter.png'></img></a>
-                            <a href='https://www.facebook.com/login'><img className='media-logo' src='./assets/footer-facebook.png'></img></a>
-                            <a href='https://www.linkedin.com'><img className='media-logo' src='./assets/footer-linkedin.png'></img></a>
+                    <div className="contact-info-grid">
+                        <div className="grid-item" id="phone">
+                            Phone: 1(800)-867-5309
+                        </div>
+                        <div className="grid-item" id="email">
+                            Email: accuracy@mailinator.com
+                        </div>
+                        <div className="grid-item" id="address1">
+                            Address: 301 W Vine St,
+                        </div>
+                        <div className="grid-item" id="media1">
+                            Find us on social media:
+                        </div>
+                        <div className="grid-item" id="address2">
+                            Tooele, Ut 84074
+                        </div>
+                        <div className="grid-item" id="media2">
+                            <div className="media-links">
+                                <a href='https://www.twitter.com/login'> <img className='media-logo' src='./assets/footer-twitter.png'></img></a>
+                                <a href='https://www.facebook.com/login'><img className='media-logo' src='./assets/footer-facebook.png'></img></a>
+                                <a href='https://www.linkedin.com'><img className='media-logo' src='./assets/footer-linkedin.png'></img></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,20 +51,8 @@ export default class contact extends Component {
                     </GoogleMapReact>
                 </div>
 
-                <div className="form-wrapper">
-                    <div className="text">
-                        <span>Get In Touch</span>
-                    </div>
-                    <div className="entry-wrapper">
-                        <input type="text" placeholder="Email"></input>
-                    </div>
-                    <div className="entry-wrapper">
-                        <input type="text"placeholder="Name"></input>
-                    </div>
-                    <div className="entry-wrapper">
-                        <textarea type="text"placeholder="Message"></textarea>
-                    </div>
-                </div>
+                <ContactForm />
+                
 
             </div>
 

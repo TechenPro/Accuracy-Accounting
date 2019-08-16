@@ -20,6 +20,8 @@ export default class header extends Component {
         this.openMenu = this.openMenu.bind(this)
     }
 
+
+
     closeMenu() {
         this.setState({
             menuStatus: "Open",
